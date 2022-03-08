@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>kali简单配置</title>
+      <link href="/2022/03/08/kali%2001/"/>
+      <url>/2022/03/08/kali%2001/</url>
+      
+        <content type="html"><![CDATA[<p><a href="title:【必需】頁面標題">message</a>:comments:【可选】显示页面评论模块(默认 true)<br><a href="title:【必需】頁面標題">message</a>:description:【可选】页面描述<br><a href="title:【必需】頁面標題">message</a>:keywords:【可选】页面关键字<br><a href="title:【必需】頁面標題">message</a>:top_img:【可选】页面顶部图片<br><a href="title:【必需】頁面標題">message</a>:mathjax:【可选】显示mathjax(当设置mathjax的per_page: false时，才需要配置，默认 false)<br><a href="title:【必需】頁面標題">message</a>:katex:【可选】显示katex(当设置katex的per_page: false时，才需要配置，默认 false)<br><a href="title:【必需】頁面標題">message</a>:aside:【可选】显示侧边栏 (默认 true)<br><a href="title:【必需】頁面標題">message</a>:aplayer:【可选】在需要的页面加载aplayer的js和css,请参考文章下面的音乐 配置<br><a href="title:【必需】頁面標題">message</a>:highlight_shrink:【可选】配置代码框是否展开(true&#x2F;false)(默认为设置中highlight_shrink的配置)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> kali </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> kali </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博客撰写语法试验(不完全Markdown)</title>
       <link href="/2022/02/18/%E5%8D%9A%E5%AE%A2%E6%92%B0%E5%86%99%E8%AF%AD%E6%B3%95%E8%AF%95%E9%AA%8C/"/>
       <url>/2022/02/18/%E5%8D%9A%E5%AE%A2%E6%92%B0%E5%86%99%E8%AF%AD%E6%B3%95%E8%AF%95%E9%AA%8C/</url>

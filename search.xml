@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>kali简单配置</title>
+      <link href="/2022/03/08/kali/kali%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E6%B1%89%E5%8C%96/kali%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E6%B1%89%E5%8C%96/"/>
+      <url>/2022/03/08/kali/kali%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E6%B1%89%E5%8C%96/kali%E7%9A%84%E5%AE%89%E8%A3%85%E5%8F%8A%E6%B1%89%E5%8C%96/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-kali安装"><a href="#1-kali安装" class="headerlink" title="1.kali安装"></a>1.kali安装</h2><h3 id="方法一（使用镜像文件安装）："><a href="#方法一（使用镜像文件安装）：" class="headerlink" title="方法一（使用镜像文件安装）："></a>方法一（使用镜像文件安装）：</h3><p>####使用的素材：<br>VMware16版本、kali镜像文件<br>###安装步骤：<br>####第一步：<br>打开安装好的VMware</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> kali </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> kali </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博客撰写语法试验(不完全Markdown)</title>
       <link href="/2022/02/18/%E5%8D%9A%E5%AE%A2%E6%92%B0%E5%86%99%E8%AF%AD%E6%B3%95%E8%AF%95%E9%AA%8C/"/>
       <url>/2022/02/18/%E5%8D%9A%E5%AE%A2%E6%92%B0%E5%86%99%E8%AF%AD%E6%B3%95%E8%AF%95%E9%AA%8C/</url>

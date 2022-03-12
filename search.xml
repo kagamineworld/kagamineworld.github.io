@@ -4,31 +4,6 @@
   
     
     <entry>
-      <title>Markdown文章</title>
-      <link href="/2022/03/11/Markdown/Markdown%E6%96%87%E7%AB%A0/"/>
-      <url>/2022/03/11/Markdown/Markdown%E6%96%87%E7%AB%A0/</url>
-      
-        <content type="html"><![CDATA[<h2 id="Markdown段落"><a href="#Markdown段落" class="headerlink" title="Markdown段落"></a>Markdown段落</h2><h3 id="换行方式1：Markdown的换行可以使用两个以上的空格加回车；"><a href="#换行方式1：Markdown的换行可以使用两个以上的空格加回车；" class="headerlink" title="换行方式1：Markdown的换行可以使用两个以上的空格加回车；"></a>换行方式1：Markdown的换行可以使用两个以上的空格加回车；</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">我要换行啦哈   </span><br><span class="line">换行</span><br></pre></td></tr></table></figure><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAA1CAYAAABofjQZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALbSURBVHhe7ZoLjtswDETTXim5/wlyp24n6BQDgpIof2IZ5AMESxRF2hzZmzX8689fHkVKfv87Fgkp8RMz/dh/vV6f4/v9/hwxZl+h3wwax8Zt5fGY8W2xJz844hxOB+KPeD6f/5uFNm9OsfNH+xNvnddGeD6RdWTG9ypC4pNRQXoXbOdGxfH8bbN4tghezFEsXWN9Obb21Zh67HuPst7jDXNRGMOugT2SV8eefw/665HYMVBf0OoDO16KzxbooLs72kirD3pzgLbeXIvRvMXLNZPDW6+MYl3F6Xd+5I4YxUW/xdZ1wOa3a60NtHwB7RYvzgoc+q+ed+Gw0c6+HUdA4Vg87Ss2Fv3U346PwovPRvtqTIu/RTBbBK95RPMA+LbibIUxZ87jToTFZwFaYtniY2xby86m82BGzBnfEVvyA56711ZkKD5PfrYQ8NcWsemYsHBaRNs/Ao2j+RX42HOz+Xn+2lZlKP7oAjCnRbHFAC1bpDDMT189qn0vW+Icmf8Kdv/go4iewIRFgg/bbNF0zSjfLBrXw7OrrbVudXaJHxUEdvqy0dZao3Ct0st3Bt45ePCatK1K6P98vQAWADavGLR7a1poLLuulYfYec/fxuzh5be0Yni5Qct+NfUxR2J2/80v7kuJn5gSPzElfmJK/MSU+Ikp8RMTFt++7PBefrSY8S2+x+l3vn27hbHXiu8TfsMHgayIFvsK064p1mIovhUZYnqiepuD49oEiwLxI/S+UB19nbrq16vZ2fTYR79F74nQWwfq6fBlPlsggN69kT7A2NqU3lxxPlO/9kd3rqJ3fLEmQ/EhIkWfEbOEX5+h+BBRheRG0E1h+8U9mH7Jw83ADaFHtRfrs/kNH+5wFb7u+PuxSXwVntQGuB9TP/iAJzyJbgAbs7iG+no3MZv/5hf3p8RPTImfmBI/MSV+Ykr8xJT4iSnxE1PiJ6bET0yJn5gSPzElfloejx80tWXUuY3ffwAAAABJRU5ErkJggg==" alt="换行方式1的显示图"></p><h3 id="换行方式2：使用空行直接换行；"><a href="#换行方式2：使用空行直接换行；" class="headerlink" title="换行方式2：使用空行直接换行；"></a>换行方式2：使用空行直接换行；</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">我要换行啦哈</span><br><span class="line"></span><br><span class="line">换行</span><br></pre></td></tr></table></figure><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAA1CAYAAABofjQZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALbSURBVHhe7ZoLjtswDETTXim5/wlyp24n6BQDgpIof2IZ5AMESxRF2hzZmzX8689fHkVKfv87Fgkp8RMz/dh/vV6f4/v9/hwxZl+h3wwax8Zt5fGY8W2xJz844hxOB+KPeD6f/5uFNm9OsfNH+xNvnddGeD6RdWTG9ypC4pNRQXoXbOdGxfH8bbN4tghezFEsXWN9Obb21Zh67HuPst7jDXNRGMOugT2SV8eefw/665HYMVBf0OoDO16KzxbooLs72kirD3pzgLbeXIvRvMXLNZPDW6+MYl3F6Xd+5I4YxUW/xdZ1wOa3a60NtHwB7RYvzgoc+q+ed+Gw0c6+HUdA4Vg87Ss2Fv3U346PwovPRvtqTIu/RTBbBK95RPMA+LbibIUxZ87jToTFZwFaYtniY2xby86m82BGzBnfEVvyA56711ZkKD5PfrYQ8NcWsemYsHBaRNs/Ao2j+RX42HOz+Xn+2lZlKP7oAjCnRbHFAC1bpDDMT189qn0vW+Icmf8Kdv/go4iewIRFgg/bbNF0zSjfLBrXw7OrrbVudXaJHxUEdvqy0dZao3Ct0st3Bt45ePCatK1K6P98vQAWADavGLR7a1poLLuulYfYec/fxuzh5be0Yni5Qct+NfUxR2J2/80v7kuJn5gSPzElfmJK/MSU+Ikp8RMTFt++7PBefrSY8S2+x+l3vn27hbHXiu8TfsMHgayIFvsK064p1mIovhUZYnqiepuD49oEiwLxI/S+UB19nbrq16vZ2fTYR79F74nQWwfq6fBlPlsggN69kT7A2NqU3lxxPlO/9kd3rqJ3fLEmQ/EhIkWfEbOEX5+h+BBRheRG0E1h+8U9mH7Jw83ADaFHtRfrs/kNH+5wFb7u+PuxSXwVntQGuB9TP/iAJzyJbgAbs7iG+no3MZv/5hf3p8RPTImfmBI/MSV+Ykr8xJT4iSnxE1PiJ6bET0yJn5gSPzElfloejx80tWXUuY3ffwAAAABJRU5ErkJggg==" alt="换行方式2的显示图"><br>以下的换行方式在博客中也可以使用：</p><h3 id="换行方式3：可以使用下面这个换行；"><a href="#换行方式3：可以使用下面这个换行；" class="headerlink" title="换行方式3：可以使用下面这个换行；"></a>换行方式3：可以使用下面这个换行；</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我要换行啦哈<span class="language-xml"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span>换行</span><br></pre></td></tr></table></figure><h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><p>换行方式有很多，但可以使用到以上的比较少，还是使用方式3习惯。<br>(20220312)</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Markdown </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Markdown </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Markdown标题</title>
       <link href="/2022/03/11/Markdown/Markdown%E6%A0%87%E9%A2%98/"/>
       <url>/2022/03/11/Markdown/Markdown%E6%A0%87%E9%A2%98/</url>
@@ -73,6 +48,31 @@
             <tag> 程序语言 </tag>
             
             <tag> css </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Markdown文章</title>
+      <link href="/2022/03/11/Markdown/Markdown%E6%96%87%E7%AB%A0/"/>
+      <url>/2022/03/11/Markdown/Markdown%E6%96%87%E7%AB%A0/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Markdown段落"><a href="#Markdown段落" class="headerlink" title="Markdown段落"></a>Markdown段落</h2><h3 id="换行方式1：Markdown的换行可以使用两个以上的空格加回车；"><a href="#换行方式1：Markdown的换行可以使用两个以上的空格加回车；" class="headerlink" title="换行方式1：Markdown的换行可以使用两个以上的空格加回车；"></a>换行方式1：Markdown的换行可以使用两个以上的空格加回车；</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">我要换行啦哈   </span><br><span class="line">换行</span><br></pre></td></tr></table></figure><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAA1CAYAAABofjQZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALbSURBVHhe7ZoLjtswDETTXim5/wlyp24n6BQDgpIof2IZ5AMESxRF2hzZmzX8689fHkVKfv87Fgkp8RMz/dh/vV6f4/v9/hwxZl+h3wwax8Zt5fGY8W2xJz844hxOB+KPeD6f/5uFNm9OsfNH+xNvnddGeD6RdWTG9ypC4pNRQXoXbOdGxfH8bbN4tghezFEsXWN9Obb21Zh67HuPst7jDXNRGMOugT2SV8eefw/665HYMVBf0OoDO16KzxbooLs72kirD3pzgLbeXIvRvMXLNZPDW6+MYl3F6Xd+5I4YxUW/xdZ1wOa3a60NtHwB7RYvzgoc+q+ed+Gw0c6+HUdA4Vg87Ss2Fv3U346PwovPRvtqTIu/RTBbBK95RPMA+LbibIUxZ87jToTFZwFaYtniY2xby86m82BGzBnfEVvyA56711ZkKD5PfrYQ8NcWsemYsHBaRNs/Ao2j+RX42HOz+Xn+2lZlKP7oAjCnRbHFAC1bpDDMT189qn0vW+Icmf8Kdv/go4iewIRFgg/bbNF0zSjfLBrXw7OrrbVudXaJHxUEdvqy0dZao3Ct0st3Bt45ePCatK1K6P98vQAWADavGLR7a1poLLuulYfYec/fxuzh5be0Yni5Qct+NfUxR2J2/80v7kuJn5gSPzElfmJK/MSU+Ikp8RMTFt++7PBefrSY8S2+x+l3vn27hbHXiu8TfsMHgayIFvsK064p1mIovhUZYnqiepuD49oEiwLxI/S+UB19nbrq16vZ2fTYR79F74nQWwfq6fBlPlsggN69kT7A2NqU3lxxPlO/9kd3rqJ3fLEmQ/EhIkWfEbOEX5+h+BBRheRG0E1h+8U9mH7Jw83ADaFHtRfrs/kNH+5wFb7u+PuxSXwVntQGuB9TP/iAJzyJbgAbs7iG+no3MZv/5hf3p8RPTImfmBI/MSV+Ykr8xJT4iSnxE1PiJ6bET0yJn5gSPzElfloejx80tWXUuY3ffwAAAABJRU5ErkJggg==" alt="换行方式1的显示图"></p><h3 id="换行方式2：使用空行直接换行；"><a href="#换行方式2：使用空行直接换行；" class="headerlink" title="换行方式2：使用空行直接换行；"></a>换行方式2：使用空行直接换行；</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">我要换行啦哈</span><br><span class="line"></span><br><span class="line">换行</span><br></pre></td></tr></table></figure><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAH8AAAA1CAYAAABofjQZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALbSURBVHhe7ZoLjtswDETTXim5/wlyp24n6BQDgpIof2IZ5AMESxRF2hzZmzX8689fHkVKfv87Fgkp8RMz/dh/vV6f4/v9/hwxZl+h3wwax8Zt5fGY8W2xJz844hxOB+KPeD6f/5uFNm9OsfNH+xNvnddGeD6RdWTG9ypC4pNRQXoXbOdGxfH8bbN4tghezFEsXWN9Obb21Zh67HuPst7jDXNRGMOugT2SV8eefw/665HYMVBf0OoDO16KzxbooLs72kirD3pzgLbeXIvRvMXLNZPDW6+MYl3F6Xd+5I4YxUW/xdZ1wOa3a60NtHwB7RYvzgoc+q+ed+Gw0c6+HUdA4Vg87Ss2Fv3U346PwovPRvtqTIu/RTBbBK95RPMA+LbibIUxZ87jToTFZwFaYtniY2xby86m82BGzBnfEVvyA56711ZkKD5PfrYQ8NcWsemYsHBaRNs/Ao2j+RX42HOz+Xn+2lZlKP7oAjCnRbHFAC1bpDDMT189qn0vW+Icmf8Kdv/go4iewIRFgg/bbNF0zSjfLBrXw7OrrbVudXaJHxUEdvqy0dZao3Ct0st3Bt45ePCatK1K6P98vQAWADavGLR7a1poLLuulYfYec/fxuzh5be0Yni5Qct+NfUxR2J2/80v7kuJn5gSPzElfmJK/MSU+Ikp8RMTFt++7PBefrSY8S2+x+l3vn27hbHXiu8TfsMHgayIFvsK064p1mIovhUZYnqiepuD49oEiwLxI/S+UB19nbrq16vZ2fTYR79F74nQWwfq6fBlPlsggN69kT7A2NqU3lxxPlO/9kd3rqJ3fLEmQ/EhIkWfEbOEX5+h+BBRheRG0E1h+8U9mH7Jw83ADaFHtRfrs/kNH+5wFb7u+PuxSXwVntQGuB9TP/iAJzyJbgAbs7iG+no3MZv/5hf3p8RPTImfmBI/MSV+Ykr8xJT4iSnxE1PiJ6bET0yJn5gSPzElfloejx80tWXUuY3ffwAAAABJRU5ErkJggg==" alt="换行方式2的显示图"><br>以下的换行方式在博客中也可以使用：</p><h3 id="换行方式3：可以使用下面这个换行；"><a href="#换行方式3：可以使用下面这个换行；" class="headerlink" title="换行方式3：可以使用下面这个换行；"></a>换行方式3：可以使用下面这个换行；</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">我要换行啦哈<span class="language-xml"><span class="tag">&lt;<span class="name">br</span>&gt;</span></span>换行</span><br></pre></td></tr></table></figure><h3 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h3><p>换行方式有很多，但可以使用到以上的比较少，还是使用方式3习惯。<br>(20220312)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
             
         </tags>
       

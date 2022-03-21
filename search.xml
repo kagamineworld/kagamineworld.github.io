@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Markdown列表</title>
+      <link href="/2022/03/21/Markdown/Markdown%E5%88%97%E8%A1%A8/"/>
+      <url>/2022/03/21/Markdown/Markdown%E5%88%97%E8%A1%A8/</url>
+      
+        <content type="html"><![CDATA[<h4 id="写在前面："><a href="#写在前面：" class="headerlink" title="写在前面："></a>写在前面：</h4><p>Markdown支持有序列表和无序列表，同时本文中还有列表嵌套的方法，在网上也搜索过有没有其他的方法，但大致就这几种。</p><h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><h3 id="无序列表使用星号、加号、减号作为列表标记，注意在使用的时候符号后面要有一个空格，之后在填写内容；"><a href="#无序列表使用星号、加号、减号作为列表标记，注意在使用的时候符号后面要有一个空格，之后在填写内容；" class="headerlink" title="无序列表使用星号、加号、减号作为列表标记，注意在使用的时候符号后面要有一个空格，之后在填写内容；"></a>无序列表使用星号、加号、减号作为列表标记，注意在使用的时候符号后面要有一个空格，之后在填写内容；</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">*</span> 第一个</span><br><span class="line"><span class="bullet">*</span> 第二个</span><br><span class="line"><span class="bullet">+</span> 第一个</span><br><span class="line"><span class="bullet">+</span> 第二个</span><br><span class="line"><span class="bullet">-</span> 第一个</span><br><span class="line"><span class="bullet">-</span> 第二个</span><br></pre></td></tr></table></figure><p>以下是无须列表的显示结果：<br>![无序列表显示结果][无序列表显示结果]</p><h2 id="有序列表"><a href="#有序列表" class="headerlink" title="有序列表"></a>有序列表</h2><h3 id="有序列表使用数字标记，数字后面加上一个-来表示，点后面也有一个空格；"><a href="#有序列表使用数字标记，数字后面加上一个-来表示，点后面也有一个空格；" class="headerlink" title="有序列表使用数字标记，数字后面加上一个(.)来表示，点后面也有一个空格；"></a>有序列表使用数字标记，数字后面加上一个(.)来表示，点后面也有一个空格；</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> 第一个</span><br><span class="line"><span class="bullet">2.</span> 第二个</span><br></pre></td></tr></table></figure><p>以下是有序列表的显示结果；<br><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHoAAABJCAYAAADytzLnAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAALvSURBVHhe7Zq9kpswFEZv8hQp028JRVr3nvRb7UNktsgL4CKTh9gGV+lS2+0WlPakTWeaPANBGGZYDbL5kYS033c8HiyB0cw9XIHl+6GqEfLu+dhuyTuHokGgaBAoGgSKBoGiQaBoECgaBIoGgaJBoGgQKBoEigaBokGgaBAoGoToRadp2n56i6nfNr7GWUr0FSZ6oIuiaLZDArp9NlHjuDivdZRo/1yqQ5ZU+altziRJkjfbjn5b32cT0/ghsoLoq2QVnCWi9eDeCroLEabxQ8Wr6MshawKSZHmVW8jotTBJDVm213t0eTzKv81GHqSU424r5ddCHh/anTMY+yBk8x6q35PvtUNhpYcxO6KHGCNiKur73fd0iUNiTceuSdSix0pzGfAh0SES/e9oFeT+29SHDkRGK1wJZ0Z7QM/a/lbfh05Qos/7VHbHsm2NQ2VULFm1JitN3cvppm1dcF+66RibxHKRRTt1q+DeC/CYY1CINqPJNKL/eUXGQdEgUDQIFA0CRYNA0SBQNAjRi+5Wv3RM/bbxNc5Sol8w0QPdrYQNCXCxSqbGiWH1zbPos+zTJ/nZtkS+yUvxKHP/qeyCrAe73x4SofrGckuiafwgUaL9cKryJKmyw6Vtd8WCeb1nOqYqzKECPRdFe6bxQ8Wf6FNeB0OXquRnVc99FJikhix73Xt0eZTd9lW+/P4um09t3wTGTsE2p1V9mr7XDoZG9yq0hfyWi7tdTanqPEPnMvXZGtcWK2X0tWbs+fOLFAuKxtbIaJ1gM1in0e2Ty6HK6qu9/1A2l7EZ5pLQMteE34w+7yV9+is/Zt6TdcZmtMJV1jGjdZpMdveE3WWW7yyPJaO9LYGWf17lV/163l6rNvvv/fl6DKtA3RHtEqiSq9AF96UPHdP1TeHWRRTLRRataBO+A0/RJCj4fzQIFA0CRYNA0SBQNAgUDQJFg0DRIFA0CBQNAkWDQNEgUDQIFA0CRYNA0SBQNAgUDQJFQyDyHzuZ/Bxon/NGAAAAAElFTkSuQmCC" alt="有序列表显示结果"></p><h2 id="列表嵌套"><a href="#列表嵌套" class="headerlink" title="列表嵌套"></a>列表嵌套</h2><h3 id="列表嵌套只需要在子列表前面加上四个空格即可；"><a href="#列表嵌套只需要在子列表前面加上四个空格即可；" class="headerlink" title="列表嵌套只需要在子列表前面加上四个空格即可；"></a>列表嵌套只需要在子列表前面加上四个空格即可；</h3><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> 第一个：</span><br><span class="line"><span class="bullet">    -</span> 第一个的第一个嵌套；</span><br><span class="line"><span class="bullet">    -</span> 第一个的第二个嵌套；</span><br><span class="line"><span class="bullet">2.</span> 第二个：</span><br><span class="line"><span class="bullet">    -</span> 第二个的第一个嵌套；</span><br><span class="line"><span class="bullet">    -</span> 第二个的第二个嵌套；</span><br></pre></td></tr></table></figure><p>以下是显示结果：<br><img src="data:image/png;base64,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" alt="列表嵌套显示结果"></p><h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><p>列表的嵌套哪里的子列表前面的符号能使用无序列表的哪几种符号，效果一样；</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Markdown </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo下的butterfly主题的gitalk评论系统插入</title>
       <link href="/2022/03/13/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/Hexo%E4%B8%8B%E7%9A%84butterfly%E4%B8%BB%E9%A2%98%E7%9A%84gitalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%8F%92%E5%85%A5/"/>
       <url>/2022/03/13/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E6%B5%81%E7%A8%8B/Hexo%E4%B8%8B%E7%9A%84butterfly%E4%B8%BB%E9%A2%98%E7%9A%84gitalk%E8%AF%84%E8%AE%BA%E7%B3%BB%E7%BB%9F%E6%8F%92%E5%85%A5/</url>
@@ -54,33 +79,6 @@
     
     
     <entry>
-      <title>css简介</title>
-      <link href="/2022/03/11/css/css%E7%AE%80%E4%BB%8B/"/>
-      <url>/2022/03/11/css/css%E7%AE%80%E4%BB%8B/</url>
-      
-        <content type="html"><![CDATA[<p>（本篇的内容是在<a href="https://www.runoob.com/css/css-tutorial.html">菜鸟教程</a>上学习后的一些个人的记录。）</p><h2 id="css介绍"><a href="#css介绍" class="headerlink" title="css介绍"></a>css介绍</h2><p>CSS 指层叠样式表 (Cascading Style Sheets)样式定义如何显示 HTML 元素，样式通常存储在样式表中，把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题，外部样式表可以极大提高工作效率，外部样式表通常存储在 CSS 文件中，多个样式定义可层叠为一个。</p><h2 id="css语法"><a href="#css语法" class="headerlink" title="css语法"></a>css语法</h2><h4 id="1-css语法规则，主要由两部分构成：选择器-一条或多条声明；"><a href="#1-css语法规则，主要由两部分构成：选择器-一条或多条声明；" class="headerlink" title="1.css语法规则，主要由两部分构成：选择器+一条或多条声明；"></a>1.css语法规则，主要由两部分构成：选择器+一条或多条声明；<br></h4><blockquote><p>标签选择器：通过HTML标签定义选择器。<br>类别选择器：使用class定义选择器。<br>ID选择器：使用id定义选择器。</p></blockquote><h4 id="2-声明由一个属性和一个值组成；"><a href="#2-声明由一个属性和一个值组成；" class="headerlink" title="2.声明由一个属性和一个值组成；"></a>2.声明由一个属性和一个值组成；<br></h4><blockquote><p>是希望要设置的属性，并且每个属性都有一个值。属性和值被冒号分开，属性之间用分号间隔，并由花括号包围。</p></blockquote><h4 id="3-以分号结尾-属性与数值之间用冒号隔开，声明用大括号-括在一起；"><a href="#3-以分号结尾-属性与数值之间用冒号隔开，声明用大括号-括在一起；" class="headerlink" title="3.以分号结尾,属性与数值之间用冒号隔开，声明用大括号{ }括在一起；"></a>3.以分号结尾,属性与数值之间用冒号隔开，声明用大括号{ }括在一起；<br></h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;<span class="attribute">color</span>:blue;&#125;  //定义标签<span class="selector-tag">p</span>选择器</span><br><span class="line">cs1 &#123;<span class="attribute">font-family</span>:华文行楷;<span class="attribute">font-size</span>:<span class="number">15px</span>&#125;  //定义类别选择器<span class="selector-class">.csl</span></span><br><span class="line"><span class="selector-id">#cs2</span> &#123;<span class="attribute">color</span>:yellow&#125;  //定义ID选择器<span class="selector-id">#cs2</span></span><br></pre></td></tr></table></figure><h4 id="4-css注释"><a href="#4-css注释" class="headerlink" title="4.css注释:"></a>4.css注释:</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*这就是注释*/</span></span><br></pre></td></tr></table></figure><h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><p>css语句：选择器+一条或多条声明<br>css注释：和一般语言的注释差不多<br>（20200312）</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> css </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 程序语言 </tag>
-            
-            <tag> css </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Markdown标题</title>
       <link href="/2022/03/11/Markdown/Markdown%E6%A0%87%E9%A2%98/"/>
       <url>/2022/03/11/Markdown/Markdown%E6%A0%87%E9%A2%98/</url>
@@ -123,6 +121,33 @@
         <tags>
             
             <tag> 计算机系统组成原理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>css简介</title>
+      <link href="/2022/03/11/css/css%E7%AE%80%E4%BB%8B/"/>
+      <url>/2022/03/11/css/css%E7%AE%80%E4%BB%8B/</url>
+      
+        <content type="html"><![CDATA[<p>（本篇的内容是在<a href="https://www.runoob.com/css/css-tutorial.html">菜鸟教程</a>上学习后的一些个人的记录。）</p><h2 id="css介绍"><a href="#css介绍" class="headerlink" title="css介绍"></a>css介绍</h2><p>CSS 指层叠样式表 (Cascading Style Sheets)样式定义如何显示 HTML 元素，样式通常存储在样式表中，把样式添加到 HTML 4.0 中，是为了解决内容与表现分离的问题，外部样式表可以极大提高工作效率，外部样式表通常存储在 CSS 文件中，多个样式定义可层叠为一个。</p><h2 id="css语法"><a href="#css语法" class="headerlink" title="css语法"></a>css语法</h2><h4 id="1-css语法规则，主要由两部分构成：选择器-一条或多条声明；"><a href="#1-css语法规则，主要由两部分构成：选择器-一条或多条声明；" class="headerlink" title="1.css语法规则，主要由两部分构成：选择器+一条或多条声明；"></a>1.css语法规则，主要由两部分构成：选择器+一条或多条声明；<br></h4><blockquote><p>标签选择器：通过HTML标签定义选择器。<br>类别选择器：使用class定义选择器。<br>ID选择器：使用id定义选择器。</p></blockquote><h4 id="2-声明由一个属性和一个值组成；"><a href="#2-声明由一个属性和一个值组成；" class="headerlink" title="2.声明由一个属性和一个值组成；"></a>2.声明由一个属性和一个值组成；<br></h4><blockquote><p>是希望要设置的属性，并且每个属性都有一个值。属性和值被冒号分开，属性之间用分号间隔，并由花括号包围。</p></blockquote><h4 id="3-以分号结尾-属性与数值之间用冒号隔开，声明用大括号-括在一起；"><a href="#3-以分号结尾-属性与数值之间用冒号隔开，声明用大括号-括在一起；" class="headerlink" title="3.以分号结尾,属性与数值之间用冒号隔开，声明用大括号{ }括在一起；"></a>3.以分号结尾,属性与数值之间用冒号隔开，声明用大括号{ }括在一起；<br></h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;<span class="attribute">color</span>:blue;&#125;  //定义标签<span class="selector-tag">p</span>选择器</span><br><span class="line">cs1 &#123;<span class="attribute">font-family</span>:华文行楷;<span class="attribute">font-size</span>:<span class="number">15px</span>&#125;  //定义类别选择器<span class="selector-class">.csl</span></span><br><span class="line"><span class="selector-id">#cs2</span> &#123;<span class="attribute">color</span>:yellow&#125;  //定义ID选择器<span class="selector-id">#cs2</span></span><br></pre></td></tr></table></figure><h4 id="4-css注释"><a href="#4-css注释" class="headerlink" title="4.css注释:"></a>4.css注释:</h4><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*这就是注释*/</span></span><br></pre></td></tr></table></figure><h4 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h4><p>css语句：选择器+一条或多条声明<br>css注释：和一般语言的注释差不多<br>（20200312）</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> css </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 程序语言 </tag>
+            
+            <tag> css </tag>
             
         </tags>
       

@@ -1,72 +1,84 @@
 /* ����ҳ���� */
 .layout_post>#post {
     /* ���´���͸����Ϊ0.5 ���������޸�*/
-    background: rgba(255,255,255,.1);
+    background: rgba(255, 255, 255, 0);
 }
 
 /* ����ҳ�汳�� */
-#aside_content .card-widget, #recent-posts>.recent-post-item, .layout_page>div:first-child:not(.recent-posts), .layout_post>#page, .layout_post>#post, .read-mode .layout_post>#post{
+#aside_content .card-widget,
+#recent-posts>.recent-post-item,
+.layout_page>div:first-child:not(.recent-posts),
+.layout_post>#page,
+.layout_post>#post,
+.read-mode .layout_post>#post {
     /* ���´���͸����Ϊ0.5 */
-    background: rgba(255,255,255,.5);
-}@keyframes gradientBG {
+    background: rgba(255, 255, 255, 0);
+}
+
+@keyframes gradientBG {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
 }
+
 #web_bg {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background: /img/background.jpeg;
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
 }
+
 /* ҳ��footer */
 /* ����ɫ�������� */
 @-webkit-keyframes Gradient {
     0% {
         background-position: 0 50%;
     }
- 
+
     50% {
         background-position: 100% 50%;
     }
- 
+
     100% {
         background-position: 0 50%;
     }
 }
- 
+
 @-moz-keyframes Gradient {
     0% {
         background-position: 0 50%;
     }
- 
+
     50% {
         background-position: 100% 50%;
     }
- 
+
     100% {
         background-position: 0 50%;
     }
 }
- 
+
 @keyframes Gradient {
     0% {
         background-position: 0 50%;
     }
- 
+
     50% {
         background-position: 100% 50%;
     }
- 
+
     100% {
         background-position: 0 50%;
     }
 }
+
 #footer {
     background: linear-gradient(-45deg, #ee7752, #ce3e75, #23a6d5, #23d5ab);
     background-size: 400% 400%;
@@ -81,6 +93,7 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
+
 #footer:before {
     background-color: rgba(0, 0, 0, 0);
 }

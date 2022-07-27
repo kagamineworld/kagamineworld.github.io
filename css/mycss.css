@@ -31,8 +31,8 @@
 
 #web_bg {
     background: url("https://raw.githubusercontent.com/kagamineworld/kagamineworld.github.io/main/img/background.jpeg");
-    /*background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;*/
+    background-size: 100% 100%;
+    /*animation: gradientBG 15s ease infinite;*/
 }
 
 /* ҳ��footer */

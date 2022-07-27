@@ -12,7 +12,7 @@
 .layout_post>#post,
 .read-mode .layout_post>#post {
     /* ���´���͸����Ϊ0.5 */
-    background: rgba(255, 255, 255, 0);
+    background: rgba(255, 255, 255, 0.5);
 }
 
 @keyframes gradientBG {
@@ -31,8 +31,8 @@
 
 #web_bg {
     background: url("https://raw.githubusercontent.com/kagamineworld/kagamineworld.github.io/main/img/background.jpeg");
-    background-size: 400% 400%;
-    animation: gradientBG 15s ease infinite;
+    /*background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;*/
 }
 
 /* ҳ��footer */
@@ -80,7 +80,7 @@
 }
 
 #footer {
-    background: url("https://raw.githubusercontent.com/kagamineworld/kagamineworld.github.io/main/img/background.jpeg");
+    background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     background-size: 400% 400%;
     -webkit-animation: Gradient 10s ease infinite;
     -moz-animation: Gradient 10s ease infinite;

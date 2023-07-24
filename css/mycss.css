@@ -35,8 +35,8 @@
     animation: gradientBG 15s ease infinite;
 } */
 /* ҳ��footer */
-/* ����ɫ��������
-@-webkit-keyframes Gradient {
+/* ����ɫ�������� */
+/* @-webkit-keyframes Gradient {
     0% {
         background-position: 0 50%;
     }
@@ -92,14 +92,13 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 } */
-/* 
-#footer {
+
+#footer_bg {
     background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
     background-size: 400% 400%;
     animation: gradientBG 15s ease infinite;
-} */
+}
 
-/* 
 #footer:before {
     background-color: rgba(0, 0, 0, 0);
-} */
+}

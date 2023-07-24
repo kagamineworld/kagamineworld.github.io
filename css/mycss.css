@@ -82,6 +82,9 @@
 #footer {
     background: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);
     background-size: 100% 500%;
+    color: #39C5BB;
+    font-size: 14px;
+    /* ���������СΪ14���� */
     -webkit-animation: Gradient 10s ease infinite;
     -moz-animation: Gradient 10s ease infinite;
     animation: Gradient 10s ease infinite;

@@ -78,7 +78,7 @@
     }
 }
 
-#footer {
+/* #footer {
     background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
     background-size: 400% 400%;
     -webkit-animation: Gradient 10s ease infinite;
@@ -91,6 +91,12 @@
     user-select: none;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+} */
+
+#footer {
+    background: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
 }
 
 #footer:before {

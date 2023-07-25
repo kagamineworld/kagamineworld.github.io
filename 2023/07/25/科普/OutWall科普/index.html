@@ -1,0 +1,404 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>OutWall科普 | KAGAMINEWORLD</title><meta name="keywords" content="科普,网络,服务器,剪藏"><meta name="author" content="kagaminesora"><meta name="copyright" content="kagaminesora"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="原帖地址：翻墙科普 · Issue #7 · fengyehong123&#x2F;fengyehong123.github.io · GitHub 1.1VPS虚拟专用服务器（英语：Virtual private server，缩写为VPS），是将一台服务器分割成多个虚拟专享服务器的服务。实现VPS的技术分为容器技术和虚拟机技术。在容器或虚拟机中，每个VPS都可分配独立公网IP地址、独立操作系统">
+<meta property="og:type" content="article">
+<meta property="og:title" content="OutWall科普">
+<meta property="og:url" content="https://kagamineworld.github.io/2023/07/25/%E7%A7%91%E6%99%AE/OutWall%E7%A7%91%E6%99%AE/index.html">
+<meta property="og:site_name" content="KAGAMINEWORLD">
+<meta property="og:description" content="原帖地址：翻墙科普 · Issue #7 · fengyehong123&#x2F;fengyehong123.github.io · GitHub 1.1VPS虚拟专用服务器（英语：Virtual private server，缩写为VPS），是将一台服务器分割成多个虚拟专享服务器的服务。实现VPS的技术分为容器技术和虚拟机技术。在容器或虚拟机中，每个VPS都可分配独立公网IP地址、独立操作系统">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://kagamineworld.github.io/img/cover10.jpg">
+<meta property="article:published_time" content="2023-07-24T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-07-25T02:08:52.744Z">
+<meta property="article:author" content="kagaminesora">
+<meta property="article:tag" content="科普">
+<meta property="article:tag" content="网络">
+<meta property="article:tag" content="服务器">
+<meta property="article:tag" content="剪藏">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://kagamineworld.github.io/img/cover10.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://kagamineworld.github.io/2023/07/25/%E7%A7%91%E6%99%AE/OutWall%E7%A7%91%E6%99%AE/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'OutWall科普',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-07-25 10:08:52'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://avatars.githubusercontent.com/u/73889953?v=4" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">14</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">10</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">6</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/cover10.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">KAGAMINEWORLD</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">OutWall科普</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-24T16:00:00.000Z" title="发表于 2023-07-25 00:00:00">2023-07-25</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-25T02:08:52.744Z" title="更新于 2023-07-25 10:08:52">2023-07-25</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E7%A7%91%E6%99%AE/">科普</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="OutWall科普"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>原帖地址：<a target="_blank" rel="noopener" href="https://github.com/fengyehong123/fengyehong123.github.io/issues/7">翻墙科普 · Issue #7 · fengyehong123&#x2F;fengyehong123.github.io · GitHub</a></p>
+<h2 id="1-1VPS"><a href="#1-1VPS" class="headerlink" title="1.1VPS"></a>1.1<code>VPS</code></h2><p><code>虚拟专用服务器</code>（英语：Virtual private server，缩写为VPS），是将一台<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%9C%8D%E5%8A%A1%E5%99%A8">服务器</a>分割成多个虚拟专享服务器的服务。实现VPS的技术分为容器技术和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%99%9A%E6%8B%9F%E6%9C%BA">虚拟机</a>技术。在容器或虚拟机中，每个VPS都可分配独立公网<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/IP%E5%9C%B0%E5%9D%80">IP地址</a>、独立<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F">操作系统</a>、实现不同VPS间磁盘空间、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%86%85%E5%AD%98">内存</a>、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/CPU">CPU</a>资源、进程和系统配置的隔离，为用户和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%BA%94%E7%94%A8%E7%A8%8B%E5%BA%8F">应用程序</a>模拟出“独占”使用计算资源的体验。VPS可以像独立服务器一样，重装操作系统，安装程序，单独重启服务器。VPS为用户提供了管理配置的自由，可用于企业虚拟化，也可以用于<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/IDC">IDC</a>资源租用。</p>
+<p>IDC就是卖服务器的商家。</p>
+<p>IDC资源租用由VPS提供商提供。不同VPS提供商所使用的硬件VPS软件的差异，及销售策略的不同，VPS的使用体验也有较大差异。尤其是VPS提供商超卖，导致实体服务器超负荷时，VPS性能将受到极大影响。相对来说，容器技术比虚拟机技术硬件使用效率更高，更易于超卖，所以一般来说容器VPS的价格都高于虚拟机VPS的价格。</p>
+<p>这些VPS主机以最大化的效率共享<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%A1%AC%E4%BB%B6">硬件</a>、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%BD%AF%E4%BB%B6%E8%AE%B8%E5%8F%AF%E8%AF%81">软件许可证</a>以及管理资源。每个VPS主机都可分配独立公网IP地址、独立操作系统、独立超大空间、独立内存、独立<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/CPU">CPU</a>资源、独立执行程序和独立系统配置等。VPS主机用户可在服务器上自行安装程序，单独重启主机。</p>
+<ul>
+<li>简单理解VPS就是一台拥有公网IP的服务器 (24小时不会关机的电脑)</li>
+</ul>
+<p>缺陷:</p>
+<ul>
+<li>由于VPS是在一台独立的服务器上通过VM等虚拟软件虚拟出多个虚拟主机，所以当其中的一台VPS受到攻击或占用大量宽带资源时，其余的VPS也会受到影响。如果因为一台VPS被黑客入侵造成服务器瘫痪，那么其它的VPS也不能工作了。</li>
+</ul>
+<h2 id="1-2GFW"><a href="#1-2GFW" class="headerlink" title="1.2GFW"></a>1.2<code>GFW</code></h2><p>Great Firewall简称 GFW, 中文也称中国国家防火墙</p>
+<h2 id="1-3Proxy"><a href="#1-3Proxy" class="headerlink" title="1.3Proxy"></a>1.3<code>Proxy</code></h2><p>代理分为正向代理和反向代理.目前所用到的翻墙都是正向代理.</p>
+<p>例如用户想访问谷歌,直接访问谷歌服务器肯定是不行的.我们需要通过在一台在海外的服务器来替我们访问谷歌,然后海外的服务器把谷歌返回的内容转送给我们的浏览器显示,在这个过程中,我们访问的海外服务器代替我们访问了谷歌,我们访问的海外服务器也被称为代理服务器.</p>
+<h2 id="1-4VPN"><a href="#1-4VPN" class="headerlink" title="1.4VPN"></a>1.4<code>VPN</code></h2><p>​ Vpn，全称“虚拟私人网络（Virtual Private Network）”，是一种加密通讯技术。vpn是一个统称，它有很多的具体实现，比如PPTP、L2TP、IPSec和openvpn。Vpn出现远早于GFW(中国国家防火墙)，所以它不是为了翻墙而生的。vpn是一种加密通讯技术，它被设计出来的目的是数据传输安全和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%8C%BF%E5%90%8D">网络匿名</a>。</p>
+<p>​ 而既然不是为翻墙而生，那从翻墙的角度上讲，vpn协议就存在诸多问题。最严重的一个就是流量特征过于明显。墙目前已经能够精确识别绝大部分vpn协议的流量特征并给予封锁，所以，vpn这种翻墙方式基本已经废了。</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">假如你在一家跨国大企业工作，你每天在公司里通过互联网干活，你公司电脑里的的资料可能都是价值连城的商业秘密，如果一旦泄露，公司可能会受到巨大损失。怎么解决这个问题呢？在大公司内部，员工使用的互联网其实是“专用网络”，或者叫“专线”，这个网络和公司外面的公共网络并不直接连接（或者有严密的关卡），所以公司外面的黑客无法进入这个网络，这样，公司的数据就是安全的。 </span><br></pre></td></tr></table></figure>
+
+<p>​ 那么问题来了：假如公司员工到外地出差，必须用酒店的WIF远程工作，不可能用公司的专线，那怎样保证网络传输中的数据安全呢？这种情况下，公司会建议员工使用VPN。VPN虽然不是“专线网络”，却是“虚拟专线网络”，也就是说连了VPN以后，员工即使不在公司内部，上网时也可以相当于在公司内部上网。那么VPN是如何实现这种效果的呢？</p>
+<h3 id="1-2-1工作原理"><a href="#1-2-1工作原理" class="headerlink" title="1.2.1工作原理"></a>1.2.1工作原理</h3><figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对于出差的员工，公司的IT部门会在他们的电脑上装上VPN软件。这个VPN软件可以连接到一台由公司内部控制的电脑服务器上，叫“VPN服务器”（VPN Server）。出差员工连上VPN以后，他上网时就不再直接访问公共互联网，而是通过VPN服务器间接访问。 </span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/fengyehong123/img/master/20191113093017.png" alt="
+"></p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">举例来说，这个人想要打开Google，如果不用VPN，他的电脑就直接去连Google的网站。而开启VPN以后，如果他想打开Google，他的电脑就不再直接连接Google网站，而是去连接VPN服务器，并给VPN服务器发一条指令——“我要访问Google”。VPN服务器接到指令后，自己去访问Google，收到Google网页的内容，再把内容回传给员工，这样使用VPN的员工最终就能看到Google网站的内容了。也就是说，使用VPN时，这个员工的所有网上访问都通过VPN服务器代理完成的。 </span><br></pre></td></tr></table></figure>
+
+<p>​ 此外，VPN还有一个重要特点：VPN用户和VPN服务器之间的通讯是加密的，这样就不会被黑客盗取内容。这就好比两个人打电话，是有可能被第三方监听的，但是如果打电话的两个人使用的是别人都听不懂的特殊语言（这就是加密），那么即使有人监听，打电话的内容也不会被泄露。</p>
+<p>​ 有了这些特点，我们就可以理解为什么使用VPN能保证用户的网络安全：用户所有的网络访问都不直接完成，而是通过VPN服务器作为中间人传递内容，而用户和VPN服务器之间的所有连接都是加密的。这样黑客就无法拦截破解VPN用户的网络访问内容。</p>
+<h3 id="1-2-2用途"><a href="#1-2-2用途" class="headerlink" title="1.2.2用途"></a>1.2.2用途</h3><blockquote>
+<p>VPN可以提高上网的安全性</p>
+</blockquote>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">因为使用VPN时所用的网络访问都是加密进行的，所以使用VPN上网，安全性就更高，黑客很难截取用户的重要信息。如果你使用公共WIFI上网（例如在咖啡馆上网）时，需要做安全性强的操作（比如使用网上银行或网上投资账户），那么建议你连上VPN，因为这样会大大提高安全性。 </span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>VPN可以隐藏上网者的身份</p>
+</blockquote>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">因为VPN用户访问任何网站都是通过VPN服务器间接访问的，所以被访问的网站看到的访问者是VPN服务器，而不是VPN用户本人的电脑，这样VPN用户就能对要访问的网站隐藏自己的真正身份。 </span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>VPN可以突破网站的地域限制</p>
+</blockquote>
+<p>​ 很多网站都有地域限制，比如视频网站Netflix在不同国家提供不同的内容，美国用户访问Netflix时看到的是美国版的内容，香港用户看到的是香港版的内容。网站的这种功能是通过查看访问者的IP地址属于哪个国家来实现的。而VPN可以用来突破这种IP限制。比如：香港的用户想要看到美国版Netflix的内容，可以先连接到一台位于美国的VPN服务器。这样Netflix网站就会以为访问着来自美国，而提供美国版的内容。基于同样的道理，海外华人可以通过VPN翻墙回国，观看仅限国内用户观看的视频内容。另外，VPN还可以用来在网上购物时省钱，因为一些酒店和机票网站对不同国家有不同的价格，通过VPN换成不同国家的IP往往可以省钱。</p>
+<blockquote>
+<p>突破网络封锁（翻墙）</p>
+</blockquote>
+<p>​ VPN部署在VPS上,而VPS的地址在海外.GFW目的只是让中国网民不能访问特定的国外服务器(例如谷歌和推特等),而不是禁止访问所有的国外服务器.所以我们连接上VPN之后通过加密的方式访问海外的VPN,进而通过海外的VPN访问到海外被禁的服务器上的内容.由于整个访问过程的信息都是被加密的,所以GFW并不清楚访问的内容是什么,因此就翻墙成功了.虽然通讯是加密的,但是通讯过程中的流量特征很明显,我个人的理解是:虽然GFW并不能明确的知道访问的内容,但是能从流量特征去分析出来,访问的网站应该是被墙的网站,然后用户和VPN代理服务器之间的连接就被和谐了</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/fengyehong123/img/master/20191113093805.png" alt="
+"></p>
+<blockquote>
+<p>以下基本所有内容都摘自 <a target="_blank" rel="noopener" href="https://doubibackup.com/">逗比根据地</a>,本人对网站的教程和站长的回复做了整理</p>
+</blockquote>
+<h2 id="2-1下载地址"><a href="#2-1下载地址" class="headerlink" title="2.1下载地址"></a>2.1下载地址</h2><blockquote>
+<p>shadowsocks</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/shadowsocks">https://github.com/shadowsocks</a></p>
+<p><a target="_blank" rel="noopener" href="https://shadowsocks.org/en/index.html">https://shadowsocks.org/en/index.html</a></p>
+<blockquote>
+<p>shadowsocksR</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="https://github.com/shadowsocksr-backup">https://github.com/shadowsocksr-backup</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/shadowsocksrr/shadowsocksr-csharp/releases">https://github.com/shadowsocksrr/shadowsocksr-csharp/releases</a> (建议使用这个下载)</p>
+<p>下载之后解压压缩文件(一定要解锁全部的压缩文件,不要只解压.exe文件)</p>
+<p>然后打开 <code>ShadowsocksR-dotnet4.0.exe</code>文件</p>
+<h2 id="2-2影梭使用详解"><a href="#2-2影梭使用详解" class="headerlink" title="2.2影梭使用详解"></a>2.2影梭使用详解</h2><p>1.从机场主(因为SSR的图标是一个纸飞机,所以SSR账号提供者被称为机场主)获取SSR的配置信息</p>
+<p>一般为二维码或者<code>ssr://MTE4LjI3LjI5LjE......</code>格式的字符串</p>
+<p>2.进行简单的配置</p>
+<p>复制机场主提供的配置字符串,鼠标右键单击纸飞机图标</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/fengyehong123/img/master/20191113161124.png" alt="
+"></p>
+<p>系统代理模式选择PAC模式</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/fengyehong123/img/master/20191113164631.png" alt="
+"></p>
+<p>代理规则选择绕过局域网和大陆 或者 全局</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/fengyehong123/img/master/20191113164730.png" alt="
+"></p>
+<p>配置好就可翻墙了</p>
+<h3 id="2-2-1系统代理模式"><a href="#2-2-1系统代理模式" class="headerlink" title="2.2.1系统代理模式"></a>2.2.1系统代理模式</h3><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/fengyehong123/img/master/20191113101106.png" alt="
+"></p>
+<h4 id="2-1-1-1直连模式"><a href="#2-1-1-1直连模式" class="headerlink" title="2.1.1.1直连模式"></a>2.1.1.1直连模式</h4><figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">所有网络请求不经过SSR客户端,由浏览器直接访问目标服务器</span><br><span class="line">	一般会使用直连模式 + 浏览器代理插件 的方式使用,即通过浏览器插件中的规则来判断哪些网站直连,哪些网站需要走代理.</span><br><span class="line">	需要走代理的网站会通过浏览器代理插件把网络请求转发给SSR客户端,然后由SSR客户端根据代理规则的设置最终决定走代理还是直接连接.</span><br><span class="line">	这种组合使用的方式,浏览器插件中需要进行配置:</span><br><span class="line">        配置1:SSR客户端的本地代理IP:127.0.0.1:1080端口</span><br><span class="line">        配置2:需要从gfwlist中添加更新规则列表</span><br><span class="line">        规则地址:https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt</span><br><span class="line">    由于SSR客户端使用了直连的方式,客户端不会修改本机Internet选项卡中的代理配置.</span><br><span class="line">    因为浏览器配置了扩展代理,因此浏览器会优先读取扩展中的代理配置,不会读取本机Internet选项卡中的代理配置 </span><br></pre></td></tr></table></figure>
+
+<p>直连模式不会修改本机的代理配置</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/fengyehong123/img/master/20191113140723.png" alt="
+"></p>
+<p>浏览器中的拓展配置</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/fengyehong123/img/master/20191113140227.png" alt="
+"></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/fengyehong123/img/master/20191113140500.png" alt="
+"></p>
+<p>SwitchyOmega插件的作用是接管浏览器的系统代理设置，只对安装插件的浏览器内有影响，并不会影响“其他所有浏览器”和软件的使用</p>
+<h4 id="2-1-1-2PAC模式"><a href="#2-1-1-2PAC模式" class="headerlink" title="2.1.1.2PAC模式"></a>2.1.1.2PAC模式</h4><blockquote>
+<p>PAC 用于控制什么流量数据进入SSR客户端，而代理规则用于控制进入SSR客户端的流量数据是走代理还是直连，代理规则选择全局代表所有进入SSR客户端的流量数据都走代理。</p>
+</blockquote>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">PAC模式控制的是系统层面的代理，所有浏览器发出去的请求(包括软件内置的浏览器页面)都会走根据PAC文件来进行过滤.</span><br><span class="line">SSR客户端的配置文件中有一个PAC文件,文件中记录着被GFW和谐的网站域名等.如果我们访问的网站(例如谷歌)在PAC文件中有记录,说明这个网站被和谐,无法直接访问其服务器,这个时候浏览器的请求会到SSR客户端,然后根据代理规则中的设置来决定本次请求走代理还是直接连接. </span><br></pre></td></tr></table></figure>
+
+<p>PAC模式修改了本机的代理设置</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/fengyehong123/img/master/20191113141853.png" alt="
+"></p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"> pac是系统代理判断是否走shadowsocks，是第一层判断</span><br><span class="line">SSR代理规则中的 绕过局域网和大陆、绕过局域网和非大陆 均是依靠 SSR客户端目录下的 chn_ip.txt 文件内的中国IP段。</span><br><span class="line">	我测试了下，当我选择 PAC模式+绕过局域网和非大陆 访问谷歌时，SSR客户端的服务器链接统计窗口出现了短暂的数据波动，这意味着判断步骤为：</span><br><span class="line">	浏览器访问谷歌网站 --&gt;&gt;</span><br><span class="line">	浏览器根据系统代理设置中的PAC(或者代理管理扩展设置)判断谷歌域名要走代理 --&gt;&gt;</span><br><span class="line">	浏览器将网站连接信息发送给 127.0.0.1 1080 SSR的本地监听地址 --&gt;&gt;</span><br><span class="line">	SSR 收到信息后，开始代理规则判断(绕过局域网和非大陆) --&gt;&gt;</span><br><span class="line">	SSR 先通过代理服务器的DNS获取域名的无污染解析IP --&gt;&gt;</span><br><span class="line">	然后再判断IP是否为大陆IP，不是，所以最后结果为：直连。</span><br><span class="line"></span><br><span class="line">	PAC列表也是他人维护的，只有别人提交才会增加被墙的域名，效率比较低，所以一些有特殊需求的人会选择用 绕过大陆或者绕过非大陆。</span><br><span class="line">	当某个软件的代理设置给设置为走 SSR 代理(SOCKS5 127.0.0.1 1080)时，那么你可以通过代理规则来控制哪些IP走代理，哪些不走。</span><br><span class="line">    举个例子：</span><br><span class="line">    你将 IDM(多线程下载软件) 设置走了 SSR 的代理，而代理规则选择 绕过局域网和大陆，那么当你下载国内文件时将不会走代理，当你下载国外文件时，将自动走代理。 </span><br></pre></td></tr></table></figure>
+
+<p>全局模式</p>
+<blockquote>
+<p>全局模式修改了本机的代理设置</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/fengyehong123/img/master/20191113150221.png" alt="
+"></p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">此时PAC文件失去作用,所有由浏览器发出的请求都会经过SSR客户端,然后根据代理规则中的设置来决定本次请求走代理还是直接连接. </span><br></pre></td></tr></table></figure>
+
+<p>PAC模式和全局模式的区别</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">简单的说，你选择PAC模式的话，只有访问被墙的网站才会走代理，访问国内的网站不走代理，当然一些网站被墙了 没人提交的话，就需要你自己添加PAC网址规则了。 </span><br><span class="line"></span><br><span class="line">如果ShadowsocksR的客户端默认不自带 PAC.txt 文件，这时候你选择 PAC模式 ，因为没有PAC文件，所以实际上和选择 全局模式 是一样的。</span><br><span class="line"></span><br><span class="line">如果ShadowsocksR不自带PAC文件的话,需要我们自己手动添加.从GFWList中获取最新的PAC地址,然后添加 </span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-2PAC"><a href="#2-2-2PAC" class="headerlink" title="2.2.2PAC"></a>2.2.2PAC</h3><figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">英语：Proxy auto-config，简称PAC.中文叫做:代理自动配置.是一种网页浏览器技术，用于定义浏览器该如何自动选择适当的代理服务器来访问一个网址。</span><br><span class="line">一个PAC文件包含一个JavaScript形式的函数“FindProxyForURL(url, host)”。这个函数返回一个包含一个或多个访问规则的字符串。用户代理根据这些规则适用一个特定的代理器或者直接访问。当一个代理服务器无法响应的时候，多个访问规则提供了其他的后备访问方法。浏览器在访问其他页面以前，首先访问这个PAC文件。PAC文件中的URL可能是手工配置的，也可能是是通过网页的网络代理自发现协议（WPAD）自动配置的。</span><br><span class="line">PAC中文名叫做代理自动配置，PAC其实就是 HTTP/SOCKS等代理服务器 + 网址规则，只有在你浏览器访问网址规则中包含的网站 时才会走PAC文件中包含指定的HTTP/SOCKS代理服务器。</span><br><span class="line">因为Shadowsocks作者喝茶后，原本维护更新的PAC（GFWlist）文件也被删除，不过现在由ShadowsocksR作者接手维护了（Github项目），由网友不断的提交新的被墙的网址和IP。目前分为网址白名单、黑名单、黑白名单，同时也有ip的名单。 </span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/fengyehong123/img/master/20191113101515.png" alt="
+"></p>
+<p>PAC的使用过程</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">访问XXX网站，浏览器会读取系统代理设置，如果设置的有代理（比如PAC），那么浏览器就会读取PAC里面的规则和代理服务器（127.0.0.1 1080），然后去根据PAC规则匹配XXX网站域名，如果匹配存在，那么根据规则设置来判断是走代理还是不走代理.</span><br><span class="line">走代理那么浏览器就会把访问XXX网站的信息数据发给代理服务器127.0.0.1 1080 也就是SSR客户端，然后SSR客户端发给SSR服务端最后转一圈再返回来。</span><br><span class="line">不走代理的话,就会直连连接XXX网站对应的服务器 </span><br></pre></td></tr></table></figure>
+
+<p>PAC更新为…?</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"> 不需要选择，也无法选择，因为SSR停止更新删除项目后，更新PAC为XXX 的所有选项都已失效。</span><br><span class="line"> </span><br><span class="line">1. 因为 gfwlist 更新频率不高，往往一个月也没更新多少条内容，所以不需要频繁更新 pac.txt 文件，偶尔更新一次就行了。</span><br><span class="line">2. 如果使用 Proxy SwitchyOmega 类代理管理扩展的情景模式时，只需要使用 GFWList 的地址即可，不需要特意更新pac文件,建议配置浏览器插件使用 </span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-3代理规则"><a href="#2-2-3代理规则" class="headerlink" title="2.2.3代理规则"></a>2.2.3代理规则</h3><blockquote>
+<p><code>系统代理模式</code>和<code>代理规则</code> 这两种判断方式是相互配合使用的,先用系统代理模式来判断是否让数据进入SSR客户端，再用代理规则来判断进入SSR客户端的数据是直连还是走代理。</p>
+</blockquote>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/fengyehong123/img/master/20191113102007.png" alt="
+"></p>
+<p><strong>代理规则</strong> 是根据IP判断 , 用于<strong>判断 进入SSR客户端的数据流量是走代理还是直连。</strong></p>
+<ul>
+<li><p><strong>绕过局域网</strong>，局域网内IP 直连，不走代理.局域网外IP 都走代理。</p>
+</li>
+<li><p><strong>绕过局域网和大陆</strong>，访问的网站的是大陆IP则直接连接，访问 非大陆IP 的网站都走代理。</p>
+</li>
+<li><p><strong>绕过局域网和非大陆</strong>，访问网站的是大陆IP都走代理，访问 非大陆IP 的网站都不走代理，这个一般是海外访问国内网站用的。</p>
+</li>
+<li><p>**用户自定义,**用户自己根据一定的规则来设定哪些IP走代理,哪些IP直连</p>
+</li>
+</ul>
+<p>举个栗子：</p>
+<p>假设系统代理模式为 <strong>PAC</strong>，那么访问 <strong><a target="_blank" rel="noopener" href="http://www.google.com/">www.google.com</a></strong> ，浏览器在PAC文件中匹配这个域名，并发现这个域名按PAC规则规则应走代理，所以 浏览器就会发送 访问网页数据到 PAC中的代理服务器(默认如127.0.0.1:1080)，于是SSR客户端就收到了 访问谷歌的数据，而这时候就该用 <strong>代理规则</strong> 判断了。</p>
+<p>若<strong>代理规则为：绕过局域网</strong>，则判断 <a target="_blank" rel="noopener" href="http://www.google.com/">www.google.com</a> 域名的IP是否是局域网IP，然而不是局域网IP，<strong>于是走代理。</strong></p>
+<p>若<strong>代理规则为：绕过局域网和大陆</strong>，则判断 <a target="_blank" rel="noopener" href="http://www.google.com/">www.google.com</a> 域名的IP是否是局域网IP 或 大陆IP，然而不是局域网IP或大陆IP，<strong>于是走代理。</strong></p>
+<p><strong>代理规则为：绕过局域网和非大陆</strong>，则判断 <a target="_blank" rel="noopener" href="http://www.google.com/">www.google.com</a> 域名的IP是否是局域网IP 或 非大陆IP，然而是非大陆IP，于是不走代理，<strong>直连。</strong></p>
+<p><strong>代理规则为：全局</strong>，不判断 <a target="_blank" rel="noopener" href="http://www.google.com/">www.google.com</a> 域名的IP，<strong>直接走代理。</strong></p>
+<h3 id="2-2-4用户添加自定义规则"><a href="#2-2-4用户添加自定义规则" class="headerlink" title="2.2.4用户添加自定义规则"></a>2.2.4用户添加自定义规则</h3><blockquote>
+<p><a target="_blank" rel="noopener" href="https://doubibackup.com/3we1qxzj-7.html">https://doubibackup.com/3we1qxzj-7.html</a></p>
+</blockquote>
+<h3 id="2-2-5Shadowsocks的负载均衡模式"><a href="#2-2-5Shadowsocks的负载均衡模式" class="headerlink" title="2.2.5Shadowsocks的负载均衡模式"></a>2.2.5Shadowsocks的负载均衡模式</h3><figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Shadowsocks和ShadowsocksR都有个负载均衡功能，官方的解释是：</span><br><span class="line">	负载均衡功能，适用于网页浏览，不适用于看视频或下载等需要大流量的环境。如需下载请在连接统计窗口通过下载测速测试速度最快的服务器然后单独连接之。</span><br><span class="line">	简单的说就是，用用这个节点用用那个节点，不照着一个节点用，达成所有节点负载均衡的目的。所以大流量的时候(例如看视频)不要开这个。 </span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-6ShadowsocksR中的本地代理"><a href="#2-2-6ShadowsocksR中的本地代理" class="headerlink" title="2.2.6ShadowsocksR中的本地代理"></a>2.2.6ShadowsocksR中的本地代理</h3><figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">本地代理主要是给自己的本机软件和局域网内其他设备用的。</span><br><span class="line">假设你设置的本地代理端口是默认的 1080 ，然后你这个电脑在局域网内的 内网IP是 192.168.0.5 。</span><br><span class="line">本机软件，比如 IDM 想要经过ShadowsocksR下载墙外的内容，那么你可以IDM设置代理服务器 Socks5代理 127.0.0.1:1080 ，然后 IDM 就会通过ShadowsocksR下载墙外的文件了。</span><br><span class="line"></span><br><span class="line">其他设备比如，你安卓手机想要不通过安卓客户端连接同局域网内的电脑上的ShadowsocksR，那么在安卓的设置中设置代理服务器 192.168.0.5:1080 就可以连接到你电脑的 ShadowsocksR了，其他设备也是一样。</span><br><span class="line"></span><br><span class="line">同局域网内其他设备想要链接你这个电脑上面的ShadowsocksR，只要在他们的浏览器或系统代理设置 设置为 192.168.0.5:1080 就行了. </span><br></pre></td></tr></table></figure>
+
+<h3 id="2-2-7ShadowsocksR中的二级-前置-代理"><a href="#2-2-7ShadowsocksR中的二级-前置-代理" class="headerlink" title="2.2.7ShadowsocksR中的二级(前置)代理"></a>2.2.7ShadowsocksR中的二级(前置)代理</h3><figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">二级(前置)代理指的是：当你链接Shadowsocks服务器的时候，并不会直接连接Shadowsocks服务器，而是先链接 二级(前置)代理服务器，然后二级(前置)代理服务器再去链接Shadowsocks服务器，可以达到 隐藏自己的IP 或 通过国内中转(国内服务器搭建代理服务器)来加速Shadowsocks。</span><br><span class="line"></span><br><span class="line">同时上面提到的代理规则，就是给二级(前置)代理使用的，当你设置 代理规则 —— 全局 的时候，你访问国内的网站，你也是走代理服务器的，而你访问海外的网站也是先链接代理服务器然后再链接Shadowsocks服务器的，达到任何情况隐藏自己真实IP的目的，当然还有其他的作用就不一一说明了。</span><br><span class="line">还有就是，二级(前置)代理，还有个主要使用情况是：</span><br><span class="line">部分企业/学校 要链接互联网，必须要用 企业/学校 提供的HTTP代理服务器(一般都是为了防止你访问不该访问的网站)。这样你就先链接 企业/学习 提供的代理服务器，然后再链接ShadowsocksR，然后利用ShadowsocksR的混淆特性，可以突破 企业/学校 的代理服务器网站限制封锁。 </span><br></pre></td></tr></table></figure>
+
+<h2 id="2-3问答"><a href="#2-3问答" class="headerlink" title="2.3问答"></a>2.3问答</h2><p>1.为什么<code>shadowsocks</code>不容易被封杀，而<code>openvpn</code>容易，它们不都是在和国外的IP进行交互吗？</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"> VPN是专门为了安全传输数据而开发的技术，更注重数据安全，并没有考虑是否隐蔽是否容易被发现。而SS/SSR等代理则是专门为了穿透防火墙，也就是专门为了翻墙而开发的技术，SS/SSR等更注重隐秘性，增加防火墙的封锁成本（时间成本、技术成本），就是更难封锁的意思。</span><br><span class="line">	VPN从一开始就没去考虑 隐秘性，而SS/SSR等则把流量伪装的很不起眼，很正常，让墙看不出有什么区别。</span><br><span class="line">就像人群中，一个间谍长的丑不拉几的影响市容，看见一次就印象深刻，另一个间谍则是长相普通，大众脸，大众衣服，很不起眼，很难引起注意。 </span><br></pre></td></tr></table></figure>
+
+<p>2.GFWList是什么?</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">GFWList其实就是一个黑白名单，里面包含了被墙的域名+国内常见域名，被墙的域名走代理，国内常见域名不走代理，其他域名不走代理。 pac文件就是以GFWList为基础制作出的 </span><br></pre></td></tr></table></figure>
+
+<p>3.系统代理和代理规则的相关问题</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">系统代理模式是判断数据是否进入SSR客户端,代理规则是判断进入客户端的流量是否走代理。</span><br><span class="line">	当使用系统代理模式 - PAC模式后，浏览器没有安装任何管理代理的扩展，直接读取系统代理,那么访问谷歌时,浏览器会去PAC中查看规则，然后判断谷歌网站走代理，然后把谷歌网站的数据发送到本地代理服务器 127.0.0.1 1080，也就是SSR客户端中.</span><br><span class="line">	然后如果你选择了 绕过局域网和非大陆（海外），那么SSR客户端会判断谷歌网站的IP是否是局域网和非大陆，而结果是非大陆（海外）的，于是不走代理，直连。</span><br><span class="line">	如果你选择了 绕过局域网和大陆，那么谷歌IP是国外的，于是SSR客户端就把谷歌网站数据发给SSR服务端，也就是走代理。</span><br><span class="line">	如果你是浏览器代理管理扩展 或其他软件 直接设置SOCKS5 127.0.0.1 1080代理（相当于系统代理 全局模式），那么直接就跳过了 系统代理模式 的判断步骤，直接开始 代理规则 判断。 </span><br></pre></td></tr></table></figure>
+
+<p>4.访问谷歌时显示流量异常</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">PAC列表只负责判断访问某个域名的时候，是否走代理.这个域名走代理后就和PAC没关系了，和SSR有关系了，谷歌显示流量异常，是指的谷歌觉得你的IP可能是机器人，一般是你访问谷歌太多，或者同IP段的其他IP访问谷歌太多，这种情况下谷歌会拉黑整个IP段，导致整个IP段访问谷歌都会出现验证码。 </span><br></pre></td></tr></table></figure>
+
+<p>5.user-rule.txt 自定义失效怎么办</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">因为SSR项目删除，导致SSR客户端里的 更新PAC为GFWList等选项全部失效，同时也导致 user-rule.txt 自定义PAC规则失效（因为这个规则文件修改后，必须点一下 [更新PAC为GFWList] 这个选项才能应用）。</span><br><span class="line">所以现在要么你用浏览器扩展管理PAC，要么你直接修改 pac.txt 文件，要么你去折腾ShadowsocksR PC客户端中的代理规则 – 用户自定义 功能 </span><br></pre></td></tr></table></figure>
+
+<p>6.浏览器拓展代理插件和SSR客户端的问题</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">如果你的浏览器使用了扩展，那么SSR客户端就无需选择全局模式了，使用直连模式即可。</span><br><span class="line">如果浏览器没有用扩展管理代理时，他会去读取系统代理设置来获取代理信息，而SSR客户端的全局模式就是设置系统代理设置而已.</span><br><span class="line">如果你用了代理管理扩展，那么扩展就直接跳过读取系统代理设置的步骤直接访问SSR客户端了，所以再选择全局模式只是多此一举。</span><br><span class="line">当你设置设置系统代理模式为 全局模式时，电脑内其他软件凡是Web应用（软件内内嵌网页，就像 QQ的验证消息窗口 LOL的客户端首页 steam的内置浏览器），都会读取系统代理设置并走代理。</span><br><span class="line">你只要设置系统代理模式为 直连模式，那么除非你设置软件走代理（SOCKS5 127.0.0.1 1080）否则他们就不会走代理，而浏览器扩展指向了 127.0.0.1 1080 ，浏览器就会直接走代理。 </span><br><span class="line"></span><br><span class="line">系统代理模式无论是用 PAC模式还是全局模式，都会有软件走代理的（例如 steam 的社区地址被墙，你无论用哪个模式，steam 内置浏览器的访问社区都会走代理，只有直连模式时才不会走代理）。</span><br><span class="line">直连+扩展SwitchyOmega 时，代理规则是起作用的，但是要取决于你扩展怎么配置，如果你扩展配置GFWList，那么扩展会通过 GFWList 判断网站是否走代理，如果是谷歌网站，那么走代理进入SSR客户端，然后借着由 代理规则 判断是否走代理。</span><br><span class="line">无论通过什么方式让软件或者浏览器走SSR代理，代理规则都会起作用的，无非是看你的代理规则配置是什么（如果是用了扩展，那么扩展配置也会影响结果，例如扩展里判断谷歌直连，那么就没代理规则的事情了）。</span><br><span class="line">我平时都是直连模式+扩展，由扩展判断是否走代理，SSR客户端的代理规则则是全局（不做判断，进入SSR客户端的数据全部都走代理）。 </span><br></pre></td></tr></table></figure>
+
+<p>7.使用SSR客户端后,浏览器无法上网</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">如果你用了浏览器扩展管理代理，那么没有打开SSR客户端时，需要切换扩展代理设置。此时浏览器的请求会走拓展代理插件配置的127.0.0.1:1080地址,这个时候是访问不到数据的.打开SSR客户端即可.</span><br><span class="line">如果你没有用浏览器扩展管理代理，那么你这种情况可能是SSR客户端意外关闭或者未知原因导致关闭的时候没有初始化系统代理设置.从而导致你使用浏览器时依然会走代理，但是你没开SSR客户端，浏览器就会提示找不到代理服务器之类的错误，你可以每次关闭SSR前试试把 系统代理模式 改为 直连模式(初始化系统代理设置)，或者用浏览器扩展管理代理。 </span><br></pre></td></tr></table></figure>
+
+<p>8.<code>断开当前所有连接</code>功能的作用</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">断开当前所有连接的意思是：当你SSR客户端有多个节点时，例如：服务器A服务器B，你当前使用服务器A.</span><br><span class="line">当你想使用 服务器B的时候，直接切换到服务器B的话，如果当前服务器A建立的链接还在传输中没有断开，那么SSR客户端会等待服务器A的链接传输完毕彻底断开后才会切换到 服务器B，这就是平滑切换，不至于切换服务器立马断开服务器A 正在传输数据的链接而导致出现什么问题。</span><br><span class="line">而断开当前所有连接功能就是当你切换服务器时，想要立即切换到服务器A 并不想等待服务器A建立的链接传输完毕平滑切换。点击断开当前所有连接后就会断开当前所有服务器链接,这样SSR客户端会自动使用切换后的服务器B。 </span><br></pre></td></tr></table></figure>
+
+<p>9.SS和SSR使用协议的安全性问题</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">SS/SSR等不需要给任何人做保证，SS/SSR用的数据加密都是目前主流的加密方式，除非你选择不加密或者最弱的例如RC4之类的加密方式，否则想要破解这些加密获取传输的数据内容，就算用超级计算机也需要大量时间，而时间就是金钱，全国同一时间多少SS/SSR流量，墙不可能也没必要一个个破解看看你们在干什么，有这功夫他们还不如去研究一下怎么更快更有效更准确的检测SS/SSR流量特征。</span><br><span class="line">你只需要知道，你的数据价值远低于破解你数据得到的价值，墙目前是想办法更有效更准确的匹配流量特征的方式去封锁。</span><br><span class="line">墙并不是一个独立的个体，墙是各大一级运营商+遍及全国省分的超级计算机集群+工作人员等组成的，墙就是在各出口处做了一个检查站之类的，用于过滤经过的流量，采集样本、封锁符合特征的流量等。 </span><br></pre></td></tr></table></figure>
+
+<p>10.拨号上网无法保存系统代理设置</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">1.通过浏览器扩展来管理代理</span><br><span class="line">2.安装无线路由器,连接无线路由器使用 </span><br></pre></td></tr></table></figure>
+
+<p>11.SSR的版本问题</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ShadowsocksR的PC客户端最后版本为 4.7.0，而其他的版本比如 4.8.0 皆为第三方修改版，只是拿着开源的披着SSR的外衣罢了。 </span><br><span class="line"></span><br><span class="line">目前正在维护的开源SSRGitHub地址</span><br><span class="line">	https://github.com/shadowsocksrr/shadowsocksr-csharp/releases </span><br></pre></td></tr></table></figure>
+
+<p>12.GFWLIST问题</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">问</span><br><span class="line">	SSR选择pac（gfwlist）模式，GFWLIST里没有的网址，但是那个网址又被墙了，然后代理规则选自定义的话，我	   自己把该网址加入规则中，应该是可以访问该网址的，对不？</span><br><span class="line">	可是我实践中，打不开，这就神奇了，测试网址：http://www.osair.cn </span><br><span class="line">答</span><br><span class="line">	 PAC（GFWList）中，如果没有你说的 www.osair.cn 域名，那么浏览器会直接直连访问，而不会走代理（流量      请求不进入SSR客户端，也就不会进行 代理规则 判断了）。</span><br><span class="line">	 当你系统代理规则为 全局模式 的时候，所有网站流量请求都会进入SSR客户端，然后SSR客户端通过你设置的代理		规则来判断进入SSR客户端的数据是 走代理 还是直连。 </span><br><span class="line">问</span><br><span class="line">	 如果规则没有该网址，默认走代理了？像是百度没有，全局模式下，规则没有百度的网址，默认走代理了？</span><br><span class="line">答</span><br><span class="line">	 是的，当规则文件内没有匹配到 baidu.com 的任何规则，就会走代理，</span><br><span class="line">	 当规则文件为空，则代表全局所有流量都走代理。 </span><br></pre></td></tr></table></figure>
+
+<p>13.自定义规则存在的必要性</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">问</span><br><span class="line">    以翻墙为目的的话，既然可以直接选择绕过局域网和大陆，为什么要自定义规则？自定义规则就是再怎么全面也有很		多冷门网站需要自己添加，不是麻烦了很多么？还是说绕过局域网和大陆不全面？ </span><br><span class="line">答</span><br><span class="line">	 你都说了以翻墙为目的，那么很多人就只想被墙的网站翻墙，没有被墙的就直连。那么这种情况就适合自定义规则，同时自定义规则也能屏蔽广告（广告域名指向0.0.0.0）。</span><br><span class="line">	绕过局域网和大陆虽然能保证低维护成本和高准确率，但是会导致一些没必要或者不能走代理的海外网站也走代理，比如你去海外IDC购买VPS，如果你挂代理很有可能被判断为欺诈，然后付钱了IDC拒绝开通VPS，然后撕逼半天巴拉巴拉的。</span><br><span class="line">	每个人都有每个人的需求，所以破娃(SSR作者)才会添加 自定义规则 的选项，让每个人可以按照自己的想法去 定制适合自己使用的代理规则。判断问题不能用你的主观意向思考其他人的想法，每个人都有每个人的想法。 </span><br></pre></td></tr></table></figure>
+
+<p>14.Shadowsocks 软件权限问题</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Shadowsocks 启动系统代理后，就会去修改注册表来设置 系统代理设置。</span><br><span class="line">而一些电脑系统或者非管理员用户（比如网吧）,可能因为没有相应的权限导致Shadowsocks启动系统代理后无法修改注册表。</span><br><span class="line">这时候就需要用管理员权限启动Shadowsocks客户端。</span><br><span class="line">如果是网吧的话，是限制不能修改注册表的，而且也没有相应的权限,可以通过在浏览器上安装拓展代理的方式解决这个问题. </span><br></pre></td></tr></table></figure>
+
+<p>15.浏览器问题</p>
+<figure class="highlight plaintext"><figcaption><span>Text</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">大多数浏览器都是默认使用系统代理的，比如：Chrome、Opera等浏览器。</span><br><span class="line">同样，也有一些浏览器是有单独的代理设置 选项，比如：Firefox和国内的几个浏览器。</span><br><span class="line"></span><br><span class="line">如果无法翻墙或上网请自己检查浏览器的代理设置是否为使用系统代理设置，如果不是就改为使用系统代理设置。</span><br><span class="line">如果没有这个代理设置选项或者已经改好了，那么就检查浏览器扩展。 </span><br></pre></td></tr></table></figure>
+
+<h2 id="2-4影梭配置文件详解"><a href="#2-4影梭配置文件详解" class="headerlink" title="2.4影梭配置文件详解"></a>2.4影梭配置文件详解</h2><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://raw.githubusercontent.com/fengyehong123/img/master/20191113170538.png" alt="
+"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">kagaminesora</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://kagamineworld.github.io/2023/07/25/%E7%A7%91%E6%99%AE/OutWall%E7%A7%91%E6%99%AE/">https://kagamineworld.github.io/2023/07/25/%E7%A7%91%E6%99%AE/OutWall%E7%A7%91%E6%99%AE/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://kagamineworld.github.io" target="_blank">KAGAMINEWORLD</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E7%A7%91%E6%99%AE/">科普</a><a class="post-meta__tags" href="/tags/%E7%BD%91%E7%BB%9C/">网络</a><a class="post-meta__tags" href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><a class="post-meta__tags" href="/tags/%E5%89%AA%E8%97%8F/">剪藏</a></div><div class="post_share"><div class="social-share" data-image="/img/cover10.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1-1VPS"><span class="toc-number">1.</span> <span class="toc-text">1.1VPS</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-2GFW"><span class="toc-number">2.</span> <span class="toc-text">1.2GFW</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-3Proxy"><span class="toc-number">3.</span> <span class="toc-text">1.3Proxy</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#1-4VPN"><span class="toc-number">4.</span> <span class="toc-text">1.4VPN</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-1%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86"><span class="toc-number">4.1.</span> <span class="toc-text">1.2.1工作原理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-2%E7%94%A8%E9%80%94"><span class="toc-number">4.2.</span> <span class="toc-text">1.2.2用途</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-1%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80"><span class="toc-number">5.</span> <span class="toc-text">2.1下载地址</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-2%E5%BD%B1%E6%A2%AD%E4%BD%BF%E7%94%A8%E8%AF%A6%E8%A7%A3"><span class="toc-number">6.</span> <span class="toc-text">2.2影梭使用详解</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-1%E7%B3%BB%E7%BB%9F%E4%BB%A3%E7%90%86%E6%A8%A1%E5%BC%8F"><span class="toc-number">6.1.</span> <span class="toc-text">2.2.1系统代理模式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-1-1%E7%9B%B4%E8%BF%9E%E6%A8%A1%E5%BC%8F"><span class="toc-number">6.1.1.</span> <span class="toc-text">2.1.1.1直连模式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2-1-1-2PAC%E6%A8%A1%E5%BC%8F"><span class="toc-number">6.1.2.</span> <span class="toc-text">2.1.1.2PAC模式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-2PAC"><span class="toc-number">6.2.</span> <span class="toc-text">2.2.2PAC</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-3%E4%BB%A3%E7%90%86%E8%A7%84%E5%88%99"><span class="toc-number">6.3.</span> <span class="toc-text">2.2.3代理规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-4%E7%94%A8%E6%88%B7%E6%B7%BB%E5%8A%A0%E8%87%AA%E5%AE%9A%E4%B9%89%E8%A7%84%E5%88%99"><span class="toc-number">6.4.</span> <span class="toc-text">2.2.4用户添加自定义规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-5Shadowsocks%E7%9A%84%E8%B4%9F%E8%BD%BD%E5%9D%87%E8%A1%A1%E6%A8%A1%E5%BC%8F"><span class="toc-number">6.5.</span> <span class="toc-text">2.2.5Shadowsocks的负载均衡模式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-6ShadowsocksR%E4%B8%AD%E7%9A%84%E6%9C%AC%E5%9C%B0%E4%BB%A3%E7%90%86"><span class="toc-number">6.6.</span> <span class="toc-text">2.2.6ShadowsocksR中的本地代理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2-7ShadowsocksR%E4%B8%AD%E7%9A%84%E4%BA%8C%E7%BA%A7-%E5%89%8D%E7%BD%AE-%E4%BB%A3%E7%90%86"><span class="toc-number">6.7.</span> <span class="toc-text">2.2.7ShadowsocksR中的二级(前置)代理</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3%E9%97%AE%E7%AD%94"><span class="toc-number">7.</span> <span class="toc-text">2.3问答</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-4%E5%BD%B1%E6%A2%AD%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E8%AF%A6%E8%A7%A3"><span class="toc-number">8.</span> <span class="toc-text">2.4影梭配置文件详解</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By kagaminesora</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '4daa6fe617daa3021d47',
+      clientSecret: '138d03bb109d48060352807e8c10bf20b0ec11ff',
+      repo: 'Blog-Comments',
+      owner: 'kagamineworld',
+      admin: ['kagamineworld'],
+      id: 'ce29728e752a9a1d78c960aa51348295',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.5" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="Ya,La,La,Yo~~" data-fontsize="50px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

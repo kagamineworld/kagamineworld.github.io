@@ -1,0 +1,271 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>vbs简单教程 | KAGAMINEWORLD</title><meta name="keywords" content="批处理脚本,教程,来自Chat GPT,vbs"><meta name="author" content="KagamineSora"><meta name="copyright" content="KagamineSora"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="vbs语法规则VBScript（Visual Basic Scripting Edition）是一种微软开发的基于 Visual Basic 的脚本语言，用于在 Windows 环境下编写脚本。以下是 VBScript 的一些基本语法规则：  大小写不敏感：VBScript 不区分大小写，但通常推荐使用 PascalCase（首字母大写）的命名约定来命名变量、函数和过程。  语句和行分隔符：VBS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="vbs简单教程">
+<meta property="og:url" content="https://kagamineworld.github.io/2023/07/27/%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC/vbs%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/index.html">
+<meta property="og:site_name" content="KAGAMINEWORLD">
+<meta property="og:description" content="vbs语法规则VBScript（Visual Basic Scripting Edition）是一种微软开发的基于 Visual Basic 的脚本语言，用于在 Windows 环境下编写脚本。以下是 VBScript 的一些基本语法规则：  大小写不敏感：VBScript 不区分大小写，但通常推荐使用 PascalCase（首字母大写）的命名约定来命名变量、函数和过程。  语句和行分隔符：VBS">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://kagamineworld.github.io/img/cover04.jpg">
+<meta property="article:published_time" content="2023-07-26T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-07-27T04:15:29.304Z">
+<meta property="article:author" content="KagamineSora">
+<meta property="article:tag" content="批处理脚本">
+<meta property="article:tag" content="教程">
+<meta property="article:tag" content="来自Chat GPT">
+<meta property="article:tag" content="vbs">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://kagamineworld.github.io/img/cover04.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://kagamineworld.github.io/2023/07/27/%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC/vbs%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体","cht_to_chs":"你已切换为简体","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: true,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'vbs简单教程',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-07-27 12:15:29'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/mycss.css"><meta name="generator" content="Hexo 6.0.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://avatars.githubusercontent.com/u/73889953?v=4" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">25</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">35</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/cover04.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">KAGAMINEWORLD</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">vbs简单教程</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2023-07-26T16:00:00.000Z" title="发表于 2023-07-27 00:00:00">2023-07-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2023-07-27T04:15:29.304Z" title="更新于 2023-07-27 12:15:29">2023-07-27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC/">批处理脚本</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="vbs简单教程"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="vbs语法规则"><a href="#vbs语法规则" class="headerlink" title="vbs语法规则"></a>vbs语法规则</h3><p>VBScript（Visual Basic Scripting Edition）是一种微软开发的基于 Visual Basic 的脚本语言，用于在 Windows 环境下编写脚本。以下是 VBScript 的一些基本语法规则：</p>
+<ol>
+<li><p><strong>大小写不敏感</strong>：VBScript 不区分大小写，但通常推荐使用 PascalCase（首字母大写）的命名约定来命名变量、函数和过程。</p>
+</li>
+<li><p><strong>语句和行分隔符</strong>：VBScript 中的语句使用换行符或冒号 <code>:</code> 分隔，换行符通常用于提高可读性。多个语句可以放在同一行，使用冒号分隔。</p>
+</li>
+<li><p><strong>注释</strong>：可以使用 <code>&#39;</code> 或 <code>Rem</code> 关键字来添加注释。注释部分将被解释器忽略。</p>
+</li>
+<li><p><strong>变量</strong>：变量在使用之前不需要声明，直接赋值即可。可以使用 <code>Dim</code> 关键字显式声明变量，使用 <code>Set</code> 关键字来引用对象变量。</p>
+</li>
+<li><p><strong>数据类型</strong>：VBScript 是一种弱类型语言，变量的数据类型是根据赋值的值来确定的。常见的数据类型包括字符串、数值、布尔、日期、对象等。</p>
+</li>
+<li><p><strong>运算符</strong>：VBScript 支持常见的数学运算符（加减乘除等）和逻辑运算符（与、或、非等）。字符串可以使用 <code>&amp;</code> 运算符连接。</p>
+</li>
+<li><p><strong>条件语句</strong>：可以使用 <code>If...Then...Else</code>、<code>Select Case</code> 等条件语句来进行条件判断和分支选择。</p>
+</li>
+<li><p><strong>循环语句</strong>：VBScript 支持 <code>Do...Loop</code>、<code>For...Next</code>、<code>While...Wend</code> 等循环语句用于重复执行代码块。</p>
+</li>
+<li><p><strong>函数和过程</strong>：可以使用 <code>Function</code> 和 <code>Sub</code> 关键字定义函数和过程。函数可以有返回值，过程则没有。</p>
+</li>
+<li><p><strong>错误处理</strong>：可以使用 <code>On Error Resume Next</code> 或 <code>On Error GoTo</code> 来处理错误和异常。</p>
+</li>
+</ol>
+<p>这些是 VBScript 的一些基本语法规则，可以帮助你开始编写 VBScript 脚本。如果需要详细的语法说明和示例，请参考微软的 VBScript 文档或其他在线资源。</p>
+<h3 id="以下是VBScript的一些基础知识和使用指南："><a href="#以下是VBScript的一些基础知识和使用指南：" class="headerlink" title="以下是VBScript的一些基础知识和使用指南："></a>以下是VBScript的一些基础知识和使用指南：</h3><ol>
+<li><p>VBScript是一种脚本语言，可用于Windows操作系统中的多个应用程序中，如Microsoft Office应用程序、Internet Explorer浏览器等。</p>
+</li>
+<li><p>VBScript可以通过多种方式运行，例如在命令提示符中使用CScript解释器、通过Windows Script Host（WSH）运行、作为ASP脚本运行等。</p>
+</li>
+<li><p>VBScript支持各种数据类型，包括字符串、整数、布尔值、日期和对象等。</p>
+</li>
+<li><p>VBScript具有各种控制结构，如if语句、for循环、while循环等。</p>
+</li>
+<li><p>VBScript可以使用内置函数和对象，如字符串函数、日期函数、文件对象、网络对象等。</p>
+</li>
+</ol>
+<p>下面是一个简单的VBScript示例，它使用<code>msgbox</code>函数在屏幕上显示一条消息：</p>
+<figure class="highlight vbscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&#x27; This is a VBScript example</span></span><br><span class="line">msgbox <span class="string">&quot;Hello, World!&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>上面的代码将显示一个弹出窗口，其中包含“Hello, World!”消息。</p>
+<h3 id="以下是一些VBScript的例子，可以帮助您更好地理解VBScript的各种用法和功能："><a href="#以下是一些VBScript的例子，可以帮助您更好地理解VBScript的各种用法和功能：" class="headerlink" title="以下是一些VBScript的例子，可以帮助您更好地理解VBScript的各种用法和功能："></a>以下是一些VBScript的例子，可以帮助您更好地理解VBScript的各种用法和功能：</h3><h4 id="获取用户输入"><a href="#获取用户输入" class="headerlink" title="获取用户输入"></a>获取用户输入</h4><figure class="highlight vbscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&#x27; Prompt the user for their name and display a welcome message</span></span><br><span class="line">name = <span class="built_in">inputbox</span>(<span class="string">&quot;What&#x27;s your name?&quot;</span>)</span><br><span class="line">msgbox <span class="string">&quot;Hello, &quot;</span> &amp; name &amp; <span class="string">&quot;!&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="循环和条件语句："><a href="#循环和条件语句：" class="headerlink" title="循环和条件语句："></a>循环和条件语句：</h4><figure class="highlight vbscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&#x27; Display numbers 1 to 10 using a for loop</span></span><br><span class="line"><span class="keyword">for</span> i = <span class="number">1</span> <span class="keyword">to</span> <span class="number">10</span></span><br><span class="line">    msgbox i</span><br><span class="line"><span class="keyword">next</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&#x27; Display even numbers 1 to 10 using a while loop and if statement</span></span><br><span class="line">i = <span class="number">1</span></span><br><span class="line"><span class="keyword">while</span> i &lt;= <span class="number">10</span></span><br><span class="line">    <span class="keyword">if</span> i mod <span class="number">2</span> = <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">        msgbox i</span><br><span class="line">    <span class="keyword">end</span> <span class="keyword">if</span></span><br><span class="line">    i = i + <span class="number">1</span></span><br><span class="line"><span class="keyword">wend</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="读取和写入文件："><a href="#读取和写入文件：" class="headerlink" title="读取和写入文件："></a>读取和写入文件：</h4><figure class="highlight vbscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&#x27; Read a text file and display its contents</span></span><br><span class="line"><span class="keyword">set</span> fso = <span class="built_in">createobject</span>(<span class="string">&quot;Scripting.FileSystemObject&quot;</span>)</span><br><span class="line"><span class="keyword">set</span> file = fso.opentextfile(<span class="string">&quot;C:\test.txt&quot;</span>, <span class="number">1</span>)</span><br><span class="line">contents = file.readall</span><br><span class="line">msgbox contents</span><br><span class="line">file.close</span><br><span class="line"></span><br><span class="line"><span class="comment">&#x27; Write to a text file</span></span><br><span class="line"><span class="keyword">set</span> fso = <span class="built_in">createobject</span>(<span class="string">&quot;Scripting.FileSystemObject&quot;</span>)</span><br><span class="line"><span class="keyword">set</span> file = fso.createtextfile(<span class="string">&quot;C:\test.txt&quot;</span>, <span class="literal">true</span>)</span><br><span class="line">file.writeline <span class="string">&quot;This is a test.&quot;</span></span><br><span class="line">file.close</span><br></pre></td></tr></table></figure>
+
+<p>上面的代码将打开一个名为“test.txt”的文本文件，并显示其内容。然后它创建一个新的文本文件，并向其中写入一行文本。</p>
+<h4 id="处理错误和异常："><a href="#处理错误和异常：" class="headerlink" title="处理错误和异常："></a>处理错误和异常：</h4><figure class="highlight vbscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&#x27; Catch and handle an error</span></span><br><span class="line"><span class="keyword">on</span> <span class="keyword">error</span> <span class="keyword">resume</span> <span class="keyword">next</span></span><br><span class="line">result = <span class="number">1</span> / <span class="number">0</span></span><br><span class="line"><span class="keyword">if</span> err.number &lt;&gt; <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">    msgbox <span class="string">&quot;An error occurred: &quot;</span> &amp; err.description</span><br><span class="line"><span class="keyword">end</span> <span class="keyword">if</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&#x27; Use try-catch to handle exceptions</span></span><br><span class="line"><span class="keyword">on</span> <span class="keyword">error</span> <span class="keyword">resume</span> <span class="keyword">next</span></span><br><span class="line"><span class="keyword">set</span> obj = <span class="built_in">createobject</span>(<span class="string">&quot;Some.Nonexistent.Object&quot;</span>)</span><br><span class="line"><span class="keyword">if</span> err.number &lt;&gt; <span class="number">0</span> <span class="keyword">then</span></span><br><span class="line">    msgbox <span class="string">&quot;An exception occurred: &quot;</span> &amp; err.description</span><br><span class="line"><span class="keyword">end</span> <span class="keyword">if</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="关于使用vbs实现模拟键盘输入"><a href="#关于使用vbs实现模拟键盘输入" class="headerlink" title="关于使用vbs实现模拟键盘输入"></a>关于使用vbs实现模拟键盘输入</h3><p>键盘上的每个键都可以在模拟键盘输入时表示为一个字符，通常使用ASCII码表示。下面是一些常见键的表示方式：</p>
+<ul>
+<li><p>字母键：直接输入字母，例如”A”表示字母A。</p>
+</li>
+<li><p>数字键：直接输入数字，例如”1”表示数字1。</p>
+</li>
+<li><p>功能键：使用预定义的名称表示，例如”F1”表示F1功能键。</p>
+</li>
+<li><p>控制键：使用特殊字符表示，例如”^”表示Ctrl键，”+”表示Shift键，”%”表示Alt键。</p>
+</li>
+<li><p>特殊键：使用特殊字符表示，例如”{“表示左大括号，”}”表示右大括号，”(“表示左括号，”)”表示右括号，”#”表示Windows键，等等。</p>
+</li>
+</ul>
+<p>需要注意的是，表示字符的方式可能因操作系统、输入法和语言环境而异，因此在使用时需要进行相应的调整。</p>
+<h4 id="详细的代码"><a href="#详细的代码" class="headerlink" title="详细的代码"></a>详细的代码</h4><figure class="highlight vbscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&#x27;这个脚本是用于模拟键盘输入的，只适用于Windows系统，并且输入的时候不能直接输入ctrl这样的键。因为输入的时候并不能执行</span></span><br><span class="line"><span class="comment">&#x27;每个键盘有固定的符号，例如qq截图的快捷键是ctrl+alt+a，利用这个代码的话只能输入 ^%a才能实现</span></span><br><span class="line"><span class="comment">&#x27;然后在cmd里调用的话是这样的：cscript myscript.vbs &quot;^%a&quot;，这里也是以qq截图快捷键为例</span></span><br><span class="line"><span class="keyword">Set</span> WshShell = WScript.<span class="built_in">CreateObject</span>(<span class="string">&quot;WScript.Shell&quot;</span>)</span><br><span class="line"><span class="comment">&#x27;inputStr = WScript.Arguments.Item(0)</span></span><br><span class="line">inputStr = <span class="string">&quot;^%a&quot;</span> <span class="comment">&#x27;这行就就是qq截图快捷键的实现，不过这会儿是注释掉的</span></span><br><span class="line">WshShell.SendKeys inputStr </span><br></pre></td></tr></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">KagamineSora</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://kagamineworld.github.io/2023/07/27/%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC/vbs%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/">https://kagamineworld.github.io/2023/07/27/%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC/vbs%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://kagamineworld.github.io" target="_blank">KAGAMINEWORLD</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC/">批处理脚本</a><a class="post-meta__tags" href="/tags/%E6%95%99%E7%A8%8B/">教程</a><a class="post-meta__tags" href="/tags/%E6%9D%A5%E8%87%AAChat-GPT/">来自Chat GPT</a><a class="post-meta__tags" href="/tags/vbs/">vbs</a></div><div class="post_share"><div class="social-share" data-image="/img/cover04.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2023/07/27/%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC/PowShell%E7%9A%84%E7%AE%80%E5%8D%95%E5%86%99%E6%B3%95/" title="Powshell的简单写法"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover04.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-27</div><div class="title">Powshell的简单写法</div></div></a></div><div><a href="/2023/07/27/%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC/bat%E8%84%9A%E6%9C%AC%E7%AE%80%E5%8D%95%E6%95%99%E7%A8%8B/" title="bat脚本简单教程"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover06.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-27</div><div class="title">bat脚本简单教程</div></div></a></div><div><a href="/2023/07/26/%E7%A7%91%E6%99%AE/CDM%E7%A7%91%E6%99%AE/" title="CDM科普"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover10.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-26</div><div class="title">CDM科普</div></div></a></div><div><a href="/2023/07/27/%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC/%E6%89%B9%E5%A4%84%E7%90%86%E8%84%9A%E6%9C%AC%E6%96%87%E4%BB%B620230727/" title="�ű�����20230727"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/img/cover09.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-27</div><div class="title">�ű�����20230727</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="gitalk-container"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content is-expand"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#vbs%E8%AF%AD%E6%B3%95%E8%A7%84%E5%88%99"><span class="toc-number">1.</span> <span class="toc-text">vbs语法规则</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A5%E4%B8%8B%E6%98%AFVBScript%E7%9A%84%E4%B8%80%E4%BA%9B%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86%E5%92%8C%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97%EF%BC%9A"><span class="toc-number">2.</span> <span class="toc-text">以下是VBScript的一些基础知识和使用指南：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A5%E4%B8%8B%E6%98%AF%E4%B8%80%E4%BA%9BVBScript%E7%9A%84%E4%BE%8B%E5%AD%90%EF%BC%8C%E5%8F%AF%E4%BB%A5%E5%B8%AE%E5%8A%A9%E6%82%A8%E6%9B%B4%E5%A5%BD%E5%9C%B0%E7%90%86%E8%A7%A3VBScript%E7%9A%84%E5%90%84%E7%A7%8D%E7%94%A8%E6%B3%95%E5%92%8C%E5%8A%9F%E8%83%BD%EF%BC%9A"><span class="toc-number">3.</span> <span class="toc-text">以下是一些VBScript的例子，可以帮助您更好地理解VBScript的各种用法和功能：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E7%94%A8%E6%88%B7%E8%BE%93%E5%85%A5"><span class="toc-number">3.1.</span> <span class="toc-text">获取用户输入</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BE%AA%E7%8E%AF%E5%92%8C%E6%9D%A1%E4%BB%B6%E8%AF%AD%E5%8F%A5%EF%BC%9A"><span class="toc-number">3.2.</span> <span class="toc-text">循环和条件语句：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%BB%E5%8F%96%E5%92%8C%E5%86%99%E5%85%A5%E6%96%87%E4%BB%B6%EF%BC%9A"><span class="toc-number">3.3.</span> <span class="toc-text">读取和写入文件：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%84%E7%90%86%E9%94%99%E8%AF%AF%E5%92%8C%E5%BC%82%E5%B8%B8%EF%BC%9A"><span class="toc-number">3.4.</span> <span class="toc-text">处理错误和异常：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E4%BD%BF%E7%94%A8vbs%E5%AE%9E%E7%8E%B0%E6%A8%A1%E6%8B%9F%E9%94%AE%E7%9B%98%E8%BE%93%E5%85%A5"><span class="toc-number">4.</span> <span class="toc-text">关于使用vbs实现模拟键盘输入</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%AF%A6%E7%BB%86%E7%9A%84%E4%BB%A3%E7%A0%81"><span class="toc-number">4.1.</span> <span class="toc-text">详细的代码</span></a></li></ol></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By KagamineSora</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><script src="/js/search/local-search.js"></script><script>var preloader = {
+  endLoading: () => {
+    document.body.style.overflow = 'auto';
+    document.getElementById('loading-box').classList.add("loaded")
+  },
+  initLoading: () => {
+    document.body.style.overflow = '';
+    document.getElementById('loading-box').classList.remove("loaded")
+
+  }
+}
+window.addEventListener('load',preloader.endLoading())</script><div class="js-pjax"><script>function addGitalkSource () {
+  const ele = document.createElement('link')
+  ele.rel = 'stylesheet'
+  ele.href= 'https://cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.css'
+  document.getElementsByTagName('head')[0].appendChild(ele)
+}
+
+function loadGitalk () {
+  function initGitalk () {
+    var gitalk = new Gitalk(Object.assign({
+      clientID: '4daa6fe617daa3021d47',
+      clientSecret: '138d03bb109d48060352807e8c10bf20b0ec11ff',
+      repo: 'Blog-Comments',
+      owner: 'kagamineworld',
+      admin: ['kagamineworld'],
+      id: 'ebeae9c1a38d074ebbc5945fd559d3eb',
+      updateCountCallback: commentCount
+    },null))
+
+    gitalk.render('gitalk-container')
+  }
+
+  if (typeof Gitalk === 'function') initGitalk()
+  else {
+    addGitalkSource()
+    getScript('https://cdn.jsdelivr.net/npm/gitalk@latest/dist/gitalk.min.js').then(initGitalk)
+  }
+}
+
+function commentCount(n){
+  let isCommentCount = document.querySelector('#post-meta .gitalk-comment-count')
+  if (isCommentCount) {
+    isCommentCount.innerHTML= n
+  }
+}
+
+if ('Gitalk' === 'Gitalk' || !true) {
+  if (true) btf.loadComment(document.getElementById('gitalk-container'), loadGitalk)
+  else loadGitalk()
+} else {
+  function loadOtherComment () {
+    loadGitalk()
+  }
+}</script></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/fireworks.min.js"></script><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.5" zIndex="-1" count="99" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/canvas-nest.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
+POWERMODE.shake = true;
+POWERMODE.mobile = false;
+document.body.addEventListener('input', POWERMODE);
+</script><script id="click-show-text" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1/dist/click-show-text.min.js" data-mobile="false" data-text="Ya,La,La,Yo~~" data-fontsize="50px" data-random="false" async="async"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
